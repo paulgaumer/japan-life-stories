@@ -4,11 +4,15 @@ import PropTypes from "prop-types"
 
 import TopBar from "./topbar"
 import Hero from "./hero"
+import MainMenu from "./main-menu"
 
 const Header = ({ siteTitle }) => (
   <header className="">
     <TopBar />
-    <Hero />
+    <div className="md:max-w-6xl mx-auto px-8">
+      <Hero />
+      <MainMenu />
+    </div>
   </header>
 )
 

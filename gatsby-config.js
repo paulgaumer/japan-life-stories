@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Lives in Japan`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Inspiring stories from foreigners who built a life in Japan.`,
+    author: `@paulgaumer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

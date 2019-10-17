@@ -2,8 +2,8 @@ import React from "react"
 
 const Hero = () => {
   return (
-    <div className="max-w-6xl mx-auto flex flex-col items-center py-12">
-      <h1>
+    <div className="flex flex-col items-center pt-12 pb-3">
+      <h1 className="">
         <span className="invisible">Lives in Japan</span>
         <svg
           width="464px"
@@ -33,7 +33,7 @@ const Hero = () => {
         </svg>
       </h1>
 
-      <h2 className="py-6">
+      <h2 className="py-6 text-center">
         Inspiring stories from foreigners who built a life in Japan
       </h2>
     </div>
