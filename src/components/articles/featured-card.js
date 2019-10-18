@@ -1,15 +1,20 @@
 import React from "react"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 const FeaturedCard = ({ article }) => {
   const art = article.node
   return (
-    <div className="flex mt-8 bg-gray-100 border-solid border-0 rounded">
+    <div
+      className="flex mt-8 bg-gray-100 border-solid border-0 rounded"
+      style={{ maxHeight: "320px" }}
+    >
       <div className="w-1/3">
         <Img
           fluid={art.mainImage.asset.fluid}
           alt={`portrait of ${art.interviewee}`}
           className="h-full object-cover rounded-tl rounded-bl"
+          imgStyle={{ objectPosition: "top" }}
         />
       </div>
       <div className="w-2/3 pl-8 pr-4 py-4">
@@ -28,6 +33,12 @@ const FeaturedCard = ({ article }) => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum...
         </div>
+        <Link
+          to={`/${art.slug.current}`}
+          className="text-sm text-gray-600 font-light underline hover:text-orange-400"
+        >
+          Read more...
+        </Link>
       </div>
     </div>
   )

@@ -20,15 +20,24 @@ const TopBar = () => (
       </div>
 
       <div className="flex items-center">
-        <Link to="#" className="text-lg pr-3 hover:text-orange-400">
+        <a
+          href="https://twitter.com"
+          className="text-lg pr-3 hover:text-orange-400"
+        >
           <FontAwesomeIcon icon={faTwitterSquare} />
-        </Link>
-        <Link to="#" className="text-lg pr-3 hover:text-orange-400">
+        </a>
+        <a
+          href="https://facebook.com"
+          className="text-lg pr-3 hover:text-orange-400"
+        >
           <FontAwesomeIcon icon={faFacebookSquare} />
-        </Link>
-        <Link to="#" className="text-lg pr-3 hover:text-orange-400">
+        </a>
+        <a
+          href="https://instagram.com"
+          className="text-lg pr-3 hover:text-orange-400"
+        >
           <FontAwesomeIcon icon={faInstagram} />
-        </Link>
+        </a>
         <p className="hover:text-orange-400">Search</p>
       </div>
     </div>

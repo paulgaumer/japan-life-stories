@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,13 +11,14 @@ import ArticlesList from "../components/articles/articles-list"
 const IndexPage = ({ data }) => {
   const allArticles = data.allSanityPost.edges
   const latestArticle = allArticles[0]
+  const archives = allArticles.slice(1)
   return (
     <Layout>
       <SEO title="Stories" />
       <div id="home-body" className="pt-16 md:flex">
         <div id="articles" className="md:w-3/4 md:pr-16">
           <FeaturedSection article={latestArticle} />
-          <ArticlesList />
+          <ArticlesList articles={archives} />
         </div>
         <div id="sidebar" className="w-1/4 invisible md:visible">
           <Sidebar />
