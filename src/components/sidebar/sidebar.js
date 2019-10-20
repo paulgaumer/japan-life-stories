@@ -55,21 +55,6 @@ const Sidebar = () => {
                 </li>
               )
             })}
-            <li className="hover:text-orange-400 mb-4 text-sm">
-              <Link>The man with multiple lives</Link>
-            </li>
-            <li className="hover:text-orange-400 mb-4 text-sm">
-              <Link>The man with multiple lives</Link>
-            </li>
-            <li className="hover:text-orange-400 mb-4 text-sm">
-              <Link>The man with multiple lives</Link>
-            </li>
-            <li className="hover:text-orange-400 mb-4 text-sm">
-              <Link>The man with multiple lives</Link>
-            </li>
-            <li className="hover:text-orange-400 mb-4 text-sm">
-              <Link>The man with multiple lives</Link>
-            </li>
           </ul>
         </div>
       </div>

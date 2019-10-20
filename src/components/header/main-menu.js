@@ -8,10 +8,10 @@ const MainMenu = () => {
         <Link to="/" className="pr-8 hover:text-orange-400">
           Stories
         </Link>
-        <Link to="about" className="pr-8 hover:text-orange-400">
+        <Link to="/about" className="pr-8 hover:text-orange-400">
           About
         </Link>
-        <Link to="contact" className="hover:text-orange-400">
+        <Link to="/contact" className="hover:text-orange-400">
           Contact
         </Link>
       </div>
