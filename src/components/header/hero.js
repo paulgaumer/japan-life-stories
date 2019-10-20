@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="">
           <span className="invisible">Lives in Japan</span>
           <svg
-            width="464px"
+            width="100%"
             height="74px"
             viewBox="0 0 464 74"
             version="1.1"
