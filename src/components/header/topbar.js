@@ -13,7 +13,7 @@ const TopBar = () => (
         <Link to="/">
           <FontAwesomeIcon
             icon={faCloudSun}
-            className="text-lg text-yellow-200"
+            className="text-lg text-orange-400"
           />{" "}
           <span className="pl-1">Tokyo, 1:00PM</span>
         </Link>
