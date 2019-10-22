@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import styled from "styled-components"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -7,6 +8,26 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
+
+const ArticleHeader = styled.header`
+  .background-gradient {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -9;
+    background-size: cover;
+    background: linear-gradient(
+      to bottom,
+      rgba(120, 119, 121, 0.37) 0%,
+      rgba(103, 68, 119, 0.63) 100%
+    );
+    /* opacity: 0.7; */
+  }
+`
 
 const ShowHeader = ({ article }) => {
   const image = useStaticQuery(graphql`
@@ -22,8 +43,12 @@ const ShowHeader = ({ article }) => {
   `)
   const socials = Object.keys(article.socials)
   return (
-    <header>
-      <BackgroundImage Tag="div" fluid={image.file.childImageSharp.fluid}>
+    <ArticleHeader className="relative">
+      <BackgroundImage
+        Tag="div"
+        fluid={image.file.childImageSharp.fluid}
+        className=""
+      >
         <div className="flex flex-col items-center relative pb-20">
           <Img
             fluid={article.mainImage.asset.fluid}
@@ -105,8 +130,9 @@ const ShowHeader = ({ article }) => {
             </div> */}
           </div>
         </div>
+        <div className="background-gradient"></div>
       </BackgroundImage>
-    </header>
+    </ArticleHeader>
   )
 }
 
