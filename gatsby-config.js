@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Lives in Japan`,
+    title: `Japan Life Stories`,
     description: `Inspiring stories from foreigners who built a life in Japan.`,
     author: `@paulgaumer`,
   },

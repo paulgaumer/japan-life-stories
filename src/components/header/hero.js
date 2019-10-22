@@ -9,29 +9,20 @@ const Hero = () => {
           <span className="invisible">Lives in Japan</span>
           <svg
             width="100%"
-            height="74px"
-            viewBox="0 0 464 74"
-            version="1.1"
+            height="81"
+            viewBox="0 0 623 81"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Lives in Japan</title>
-            <desc>Created with Sketch.</desc>
-            <g
-              id="Page-1"
-              stroke="none"
-              strokeWidth="1"
-              fill="none"
-              fillRule="evenodd"
-              fontFamily="NanumBrush, Nanum Brush Script"
-              fontSize="100"
-              fontWeight="normal"
+            <text
+              fill="#000"
+              fill-rule="evenodd"
+              font-family="NanumBrush, Nanum Brush Script"
+              font-size="100"
             >
-              <text id="Lives-in-Japan" fill="#000000">
-                <tspan x="-6" y="67">
-                  Lives in Japan
-                </tspan>
-              </text>
-            </g>
+              <tspan x="0" y="74">
+                Japan Life Stories
+              </tspan>
+            </text>
           </svg>
         </h1>
 
