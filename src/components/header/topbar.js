@@ -21,19 +21,19 @@ const TopBar = () => (
 
       <div className="flex items-center">
         <a
-          href="https://twitter.com"
+          href="https://twitter.com/JPLifeStories"
           className="text-lg pr-3 hover:text-orange-400"
         >
           <FontAwesomeIcon icon={faTwitterSquare} />
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/JapanLifeStories"
           className="text-lg pr-3 hover:text-orange-400"
         >
           <FontAwesomeIcon icon={faFacebookSquare} />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/japan_life_stories/"
           className="text-lg pr-3 hover:text-orange-400"
         >
           <FontAwesomeIcon icon={faInstagram} />
