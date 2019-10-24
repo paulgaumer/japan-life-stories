@@ -29,6 +29,22 @@ const ArticleHeader = styled.header`
   }
 `
 
+const SocialIcon = props => {
+  return (
+    <a
+      href={props.article.socials[props.social]}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-900 px-2"
+    >
+      <FontAwesomeIcon
+        icon={props.icon}
+        className="text-xl text-orange-400 hover:text-orange-500"
+      />
+    </a>
+  )
+}
+
 const ShowHeader = ({ article }) => {
   const image = useStaticQuery(graphql`
     query {
@@ -64,59 +80,26 @@ const ShowHeader = ({ article }) => {
             <p className="text-lg text-gray-600">- {article.interviewee} -</p>
             <ul className="mt-4">
               {socials.map(social => {
+                let icon = null
                 switch (social) {
                   case "website":
-                    return (
-                      <a
-                        href={article.socials[social]}
-                        className="text-gray-900 pr-2"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGlobe}
-                          className="text-xl text-orange-400 hover:text-orange-500"
-                        />
-                      </a>
-                    )
+                    icon = faGlobe
+                    break
                   case "facebook":
-                    return (
-                      <a
-                        href={article.socials[social]}
-                        className="text-gray-900 pr-2"
-                      >
-                        <FontAwesomeIcon
-                          icon={faFacebookSquare}
-                          className="text-xl text-orange-400 hover:text-orange-500"
-                        />
-                      </a>
-                    )
+                    icon = faFacebookSquare
+                    break
                   case "twitter":
-                    return (
-                      <a
-                        href={article.socials[social]}
-                        className="text-gray-900 pr-2"
-                      >
-                        <FontAwesomeIcon
-                          icon={faTwitterSquare}
-                          className="text-xl text-orange-400 hover:text-orange-500"
-                        />
-                      </a>
-                    )
+                    icon = faTwitterSquare
+                    break
                   case "instagram":
-                    return (
-                      <a
-                        href={article.socials[social]}
-                        className="text-gray-900"
-                      >
-                        <FontAwesomeIcon
-                          icon={faInstagram}
-                          className="text-xl text-orange-400 hover:text-orange-500"
-                        />
-                      </a>
-                    )
+                    icon = faInstagram
+                    break
                   default:
                     break
                 }
-                return null
+                return (
+                  <SocialIcon icon={icon} article={article} social={social} />
+                )
               })}
             </ul>
             {/* <div className="break-words pt-4">
