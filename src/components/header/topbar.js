@@ -1,47 +1,75 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
+import Moment from "react-moment"
+import "moment-timezone"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
-import { faCloudSun } from "@fortawesome/free-solid-svg-icons"
 
-const TopBar = () => (
-  <header className="bg-black">
-    <div className="md:max-w-6xl mx-auto px-8 my-0 py-2 text-xs text-white flex items-center justify-center md:justify-between">
-      <div className="hidden md:block">
-        <Link to="/">
-          <FontAwesomeIcon
-            icon={faCloudSun}
-            className="text-lg text-orange-400"
-          />{" "}
-          <span className="pl-1">Tokyo, 1:00PM</span>
-        </Link>
-      </div>
+const TopBar = () => {
+  const [currentTokyoTime, setCurrentTokyoTime] = useState("")
+  // const [currentTokyoWeather, setCurrentTokyoWeather] = useState({
+  //   weather: [{ icon: "http://openweathermap.org/img/wn/10d.png" }],
+  // })
 
-      <div className="flex items-center">
-        <a
-          href="https://twitter.com/JPLifeStories"
-          className="text-lg pr-3 hover:text-orange-400"
-        >
-          <FontAwesomeIcon icon={faTwitterSquare} />
-        </a>
-        <a
-          href="https://www.facebook.com/JapanLifeStories"
-          className="text-lg pr-3 hover:text-orange-400"
-        >
-          <FontAwesomeIcon icon={faFacebookSquare} />
-        </a>
-        <a
-          href="https://www.instagram.com/japan_life_stories/"
-          className="text-lg pr-3 hover:text-orange-400"
-        >
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
-        <p className="hover:text-orange-400">Search</p>
+  useEffect(() => {
+    setInterval(() => {
+      const time = new Date()
+      setCurrentTokyoTime(time)
+    }, 1000)
+  }, [])
+
+  // useEffect(() => {
+  //   fetch(
+  //     `http://api.openweathermap.org/data/2.5/weather?q=Tokyo&appid=${process.env.GATSBY_API_WEATHER}`
+  //   )
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       console.log(data)
+  //       setCurrentTokyoWeather(data)
+  //     })
+  // }, [])
+
+  return (
+    <header className="bg-black">
+      <div className="md:max-w-6xl mx-auto px-8 my-0 py-2 text-xs text-white flex items-center justify-center md:justify-between">
+        <div className="hidden md:block">
+          <Link to="/" className="flex items-center">
+            {/* <img
+              src={`http://openweathermap.org/img/wn/${currentTokyoWeather.weather[0].icon}.png`}
+              alt="weather status"
+              className="w-8"
+            /> */}
+            <span className="px-1">Tokyo</span>
+            <Moment date={currentTokyoTime} format="LT" tz="Asia/Tokyo" />
+          </Link>
+        </div>
+
+        <div className="flex items-center">
+          <a
+            href="https://twitter.com/JPLifeStories"
+            className="text-lg pr-3 hover:text-orange-400"
+          >
+            <FontAwesomeIcon icon={faTwitterSquare} />
+          </a>
+          <a
+            href="https://www.facebook.com/JapanLifeStories"
+            className="text-lg pr-3 hover:text-orange-400"
+          >
+            <FontAwesomeIcon icon={faFacebookSquare} />
+          </a>
+          <a
+            href="https://www.instagram.com/japan_life_stories/"
+            className="text-lg pr-3 hover:text-orange-400"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <p className="hover:text-orange-400">Search</p>
+        </div>
       </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 export default TopBar
