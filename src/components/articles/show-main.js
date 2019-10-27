@@ -16,7 +16,7 @@ const serializers = {
 
 const ShowMain = ({ article }) => {
   return (
-    <div className="mt-32">
+    <div className="mt-16">
       <BaseBlockContent blocks={article._rawBody} serializers={serializers} />
     </div>
   )
