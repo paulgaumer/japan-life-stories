@@ -7,13 +7,15 @@ import Hero from "./hero"
 import MainMenu from "./main-menu"
 
 const Header = ({ siteTitle }) => (
-  <header className="">
-    <TopBar />
-    <div className="md:max-w-6xl mx-auto px-8">
-      <Hero />
-      <MainMenu />
-    </div>
-  </header>
+  <>
+    <header className="">
+      <TopBar />
+      <div className="md:max-w-6xl mx-auto px-8">
+        <Hero />
+      </div>
+    </header>
+    <MainMenu />
+  </>
 )
 
 Header.propTypes = {
