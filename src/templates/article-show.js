@@ -12,12 +12,12 @@ const ArticleShow = ({ data }) => {
   return (
     <Layout>
       <SEO title="Stories" />
+      <ShowHeader article={article} />
       <div id="article-show-body" className="pt-16 md:flex">
         <div className="md:w-3/4 md:pr-16">
-          <ShowHeader article={article} />
           <ShowMain article={article} />
         </div>
-        <div id="sidebar" className="w-1/4 invisible md:visible">
+        <div id="sidebar" className="w-1/4 pt-16 invisible md:visible">
           <Sidebar />
         </div>
       </div>
