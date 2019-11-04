@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        "7xl": "77rem",
+      },
+    },
     inset: {
       "-1": "-0.25rem",
       "-2": "-0.5rem",
