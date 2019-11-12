@@ -7,10 +7,10 @@ import Sidebar from "../components/sidebar/sidebar"
 import ShowHeader from "../components/articles/show-header"
 import ShowMain from "../components/articles/show-main"
 
-const ArticleShow = ({ data }) => {
+const ArticleShow = ({ data, location }) => {
   const article = data.sanityPost
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO
         title={`${article.title} - ${article.interviewee}`}
         description={article.summary}
