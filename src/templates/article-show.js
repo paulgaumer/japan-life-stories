@@ -16,7 +16,7 @@ const ArticleShow = ({ data }) => {
         description={article.summary}
       />
       <ShowHeader article={article} />
-      <div id="article-show-body" className="pt-16 md:flex">
+      <div id="article-show-body" className="pt-16 px-8 md:flex">
         <div className="md:w-3/4 md:pr-16">
           <ShowMain article={article} />
         </div>

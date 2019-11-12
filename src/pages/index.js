@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Stories" />
-      <div id="home-body" className="pt-16 md:flex">
+      <div id="home-body" className="pt-16 px-8 md:flex">
         <div id="articles" className="md:w-3/4 md:pr-16">
           <FeaturedSection article={latestArticle} />
           <ArticlesList articles={archives} />
