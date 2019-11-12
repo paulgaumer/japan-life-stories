@@ -3,8 +3,8 @@ require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
 module.exports = {
   siteMetadata: {
     title: `Japan Life Stories`,
-    description: `Inspiring stories from foreigners who built a life in Japan.`,
-    author: `@paulgaumer`,
+    description: `Inspiring stories from foreigners who built a life & career in Japan.`,
+    author: `Paul Gaumer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

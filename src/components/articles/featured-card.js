@@ -18,15 +18,7 @@ const FeaturedCard = ({ article }) => {
         <div className="w-2/3 pl-8 pr-4 py-4">
           <h3 className="text-2xl text-gray-800 font-semibold">{art.title}</h3>
           <p className="text-lg text-gray-600">- {art.interviewee}</p>
-          <div className="break-words pt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum...
-          </div>
+          <div className="break-words pt-4">{art.summary}</div>
         </div>
       </div>
     </Link>

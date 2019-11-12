@@ -42,6 +42,7 @@ export const articlesQuery = graphql`
             current
           }
           interviewee
+          summary
           _rawBody
           mainImage {
             asset {

@@ -11,7 +11,10 @@ const ArticleShow = ({ data }) => {
   const article = data.sanityPost
   return (
     <Layout>
-      <SEO title="Stories" />
+      <SEO
+        title={`${article.title} - ${article.interviewee}`}
+        description={article.summary}
+      />
       <ShowHeader article={article} />
       <div id="article-show-body" className="pt-16 md:flex">
         <div className="md:w-3/4 md:pr-16">
@@ -39,6 +42,7 @@ export const query = graphql`
         instagram
       }
       publishedAt(formatString: "LL")
+      summary
       _rawBody
       mainImage {
         asset {
