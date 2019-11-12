@@ -11,14 +11,20 @@ const FeaturedCard = ({ article }) => {
           <Img
             fluid={art.mainImage.asset.fluid}
             alt={`portrait of ${art.interviewee}`}
-            className="h-56 md:h-64 lg:h-full object-cover rounded-tl rounded-bl"
+            className="h-56 md:h-64 object-cover rounded-tl rounded-bl"
             imgStyle={{ objectPosition: "top" }}
           />
         </div>
         <div className="lg:w-2/3 pl-8 pr-4 py-4">
           <h3 className="text-2xl text-gray-800 font-semibold">{art.title}</h3>
           <p className="text-lg text-gray-600">- {art.interviewee}</p>
-          <div className="break-words pt-4">{art.summary}</div>
+          <div className="break-words pt-6">{art.summary}</div>
+          <Link
+            to={`/${art.slug.current}`}
+            className="text-sm text-gray-600 font-light underline hover:text-orange-400"
+          >
+            Read more...
+          </Link>
         </div>
       </div>
     </Link>

@@ -22,7 +22,7 @@ const ArticleCard = ({ article }) => {
           </div>
           {/* .. */}
         </div>
-        <p className="pt-4 break-words">{article.summary}</p>
+        <p className="pt-6 break-words">{article.summary}</p>
         <Link
           to={`/${article.slug.current}`}
           className="text-sm text-gray-600 font-light underline hover:text-orange-400"
@@ -34,7 +34,7 @@ const ArticleCard = ({ article }) => {
         <Img
           fluid={article.mainImage.asset.fluid}
           alt={`portrait of ${article.interviewee}`}
-          className="h-full object-cover"
+          className="h-full lg:h-56 object-cover"
           imgStyle={{ objectPosition: "center" }}
         />
       </div>

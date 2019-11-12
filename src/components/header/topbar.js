@@ -65,7 +65,7 @@ const TopBar = () => {
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <p className="hover:text-orange-400">Search</p>
+          {/* <p className="hover:text-orange-400">Search</p> */}
         </div>
       </div>
     </header>
