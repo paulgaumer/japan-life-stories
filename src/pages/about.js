@@ -7,13 +7,11 @@ const About = () => {
     <Layout>
       <SEO title="About" />
       <div className="pb-8">
-        <h2 className="text-4xl text-center mt-10">About Us</h2>
-
-        <p className="mt-5">
+        <h2 className="text-4xl text-center mt-16">
           Thank you very much for visiting Japan Life Stories!
-        </p>
+        </h2>
 
-        <p className="mt-5">
+        <p className="mt-20">
           The idea of JLS started after hearing dozens of foreigners, from all
           nationalities and walks of life, ask the same question:
         </p>
@@ -29,16 +27,19 @@ const About = () => {
         </p>
 
         <p className="mt-5">
-          In a similar situation, there is often little more valuable than
-          listening to the feedbacks of people who went through the exact same
-          process, walked the exact same paths and found their way through the
-          maze. Often very personal ways.
+          In a similar situation, there is nothing more valuable than listening
+          to the feedbacks of people who went through the exact same process,
+          walked the exact same paths and found their way through the maze.
+          Often very personal ways.
         </p>
 
+        <h3 className="text-2xl mt-10">
+          This is our mission at Japan Life Stories!
+        </h3>
+
         <p className="mt-5">
-          This is our mission at Japan Life Stories: share the knowledge of
-          foreigners who built a successful life in Japan and help others
-          achieve the same dream.
+          Share the knowledge of foreigners who built a successful life in Japan
+          and help others achieve the same dream.
         </p>
 
         <p className="mt-5">
@@ -49,12 +50,13 @@ const About = () => {
           multiple threads and inspiration can be found in many stories.
         </p>
 
-        <div className="mt-5 p-6 border-2 border-black border-solid rounded text-center">
+        <div className="mt-10 p-6 border-2 border-black border-solid rounded text-center">
           <p className="text-lg text-gray-800 mb-3 font-medium">
-            Interested in a more systemic approach?{" "}
+            Would you enjoy a step-by-step process to structure your move to
+            Japan?{" "}
           </p>
+          <p></p>
           <p>
-            Would enjoy step-by-step process to structure your move to Japan?
             Join our newsletter and we'll keep you updated on our upcoming
             guidebook on how to get your life in Japan started.
           </p>
@@ -77,7 +79,7 @@ const About = () => {
           </form>
         </div>
 
-        <h3 className="text-2xl underline mt-8">About the author</h3>
+        <h3 className="text-2xl mt-10">Meet the team</h3>
         <p className="mt-5">
           Paul Gaumer spent the past 10 years living, working and building a
           life in Japan. French national, Paul experienced in a decade a wide
