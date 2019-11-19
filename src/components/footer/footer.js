@@ -82,7 +82,7 @@ const Footer = () => {
         {/* SUBFOOTER */}
         <div
           id="sub-footer"
-          className="text-gray-600 border-t border-gray-900 py-3 flex flex-col-reverse md:flex-row  items-center md:justify-between"
+          className="text-gray-600 font-light border-t border-gray-900 py-3 flex flex-col-reverse md:flex-row  items-center md:justify-between"
         >
           <p className="">© Japan Life Stories</p>
           <div className="pb-4 md:pb-0">
