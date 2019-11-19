@@ -10,14 +10,14 @@ const Nav = styled.nav`
 
 const MainMenu = () => {
   return (
-    <Nav className="md:max-w-7xl mx-auto px-8 flex justify-center py-4 bg-white border border-solid border-black border-b-4 border-l-0 border-r-0">
-      <Link to="/" className="pr-8 hover:text-orange-400">
-        Stories
+    <Nav className="md:max-w-7xl mx-auto px-8 flex justify-center py-4 bg-white border border-solid border-black border-b-4 border-l-0 border-r-0 uppercase text-lg text-gray-800">
+      <Link to="/" className="pr-10 hover:font-bold">
+        Podcast Stories
       </Link>
-      <Link to="/about" className="pr-8 hover:text-orange-400">
+      <Link to="/about" className="pr-10 hover:font-bold">
         About
       </Link>
-      <Link to="/contact" className="hover:text-orange-400">
+      <Link to="/contact" className="hover:font-bold">
         Contact
       </Link>
     </Nav>

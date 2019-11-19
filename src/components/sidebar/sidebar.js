@@ -22,7 +22,7 @@ const Sidebar = () => {
   return (
     <div className="">
       <div>
-        <h2 className="text-2xl underline">Join our newsletter</h2>
+        <h2 className="text-2xl text-gray-800">Join our newsletter</h2>
         <form className="w-full flex items-center mt-4">
           <label className="hidden w-0" htmlFor="newsletter-email-input">
             Newsletter subscription input
@@ -42,7 +42,7 @@ const Sidebar = () => {
         </form>
       </div>
       <div className="mt-12">
-        <h2 className="text-2xl underline mb-4">Recent Stories</h2>
+        <h2 className="text-2xl mb-4 text-gray-800">Recent Stories</h2>
         <div>
           <ul>
             {articles.map(({ node }) => {

@@ -10,7 +10,7 @@ const Header = ({ siteTitle, location }) => (
   <>
     <header className="">
       <TopBar />
-      <div className="md:max-w-7xl mx-auto px-8">
+      <div className="md:max-w-6xl mx-auto px-8">
         <Hero location={location} />
       </div>
     </header>

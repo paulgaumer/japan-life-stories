@@ -6,7 +6,7 @@ const FeaturedCard = ({ article }) => {
   const art = article.node
   return (
     <Link to={`/${art.slug.current}`} className="">
-      <div className="lg:flex items-center mt-8 bg-gray-100 border-solid border-0 rounded">
+      <div className="lg:flex items-center mt-8 bg-orange-100 border-solid border-0 rounded">
         <div className="lg:w-1/3">
           <Img
             fluid={art.mainImage.asset.fluid}
@@ -16,14 +16,14 @@ const FeaturedCard = ({ article }) => {
           />
         </div>
         <div className="lg:w-2/3 pl-8 pr-4 py-4">
-          <h3 className="text-2xl text-gray-800 font-semibold">{art.title}</h3>
-          <p className="text-lg text-gray-600">- {art.interviewee}</p>
+          <h3 className="text-3xl text-gray-900 font-semibold">{art.title}</h3>
+          <p className="text-xl text-gray-700">- with {art.interviewee}</p>
           <div className="break-words pt-6">{art.summary}</div>
           <Link
             to={`/${art.slug.current}`}
-            className="text-sm text-gray-600 font-light underline hover:text-orange-400"
+            className="text-sm text-orange-500 font-semibold hover:text-orange-400"
           >
-            Read more...
+            Read the full interview...
           </Link>
         </div>
       </div>
