@@ -98,7 +98,12 @@ const ShowHeader = ({ article }) => {
                     break
                 }
                 return (
-                  <SocialIcon icon={icon} article={article} social={social} />
+                  <SocialIcon
+                    icon={icon}
+                    article={article}
+                    social={social}
+                    key={social}
+                  />
                 )
               })}
             </ul>

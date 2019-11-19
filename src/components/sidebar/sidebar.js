@@ -24,7 +24,7 @@ const Sidebar = () => {
       <div>
         <h2 className="text-2xl underline">Join our newsletter</h2>
         <form className="w-full flex items-center mt-4">
-          <label className="invisible w-0" htmlFor="newsletter-email-input">
+          <label className="hidden w-0" htmlFor="newsletter-email-input">
             Newsletter subscription input
           </label>
           <input

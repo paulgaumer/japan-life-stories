@@ -20,7 +20,7 @@ const ArticleShow = ({ data, location }) => {
         <div className="md:w-3/4 md:pr-16">
           <ShowMain article={article} />
         </div>
-        <div id="sidebar" className="w-1/4 pt-16 invisible md:visible">
+        <div id="sidebar" className="w-1/4 pt-16 hidden md:block">
           <Sidebar />
         </div>
       </div>
