@@ -37,7 +37,7 @@ const TopBar = () => {
         <div className="hidden md:block font-medium">
           <Link to="/" className="flex items-center">
             <img
-              src={`http://openweathermap.org/img/wn/${currentTokyoWeather.weather[0].icon}.png`}
+              src={`https://openweathermap.org/img/wn/${currentTokyoWeather.weather[0].icon}.png`}
               alt="weather status"
               className="w-8"
             />
