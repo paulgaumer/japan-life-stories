@@ -7,7 +7,7 @@ const FeaturedCard = ({ article }) => {
   const art = article.node
   return (
     <>
-      <Link to={`/${art.slug.current}`} className="">
+      <Link to={`/stories/${art.slug.current}`} className="">
         {/* <div className="lg:flex items-center mt-8 bg-orange-100 border-solid border-0 rounded"> */}
         <div
           className="lg:flex items-center mt-8 rounded"

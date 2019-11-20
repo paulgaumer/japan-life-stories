@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 const ArticleCard = ({ article }) => {
   return (
-    <Link to={`/${article.slug.current}`} className="">
+    <Link to={`/stories/${article.slug.current}`} className="">
       <div className="md:flex border-2 border-solid border-gray-200 pt-10 border-b-0 border-l-0 border-r-0 mb-10">
         <div className="md:w-3/5 lg:w-3/4 md:pr-8">
           <div className="flex justify-between items-center md:block">
