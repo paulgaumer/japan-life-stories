@@ -22,7 +22,7 @@ const TopBar = () => {
 
   useEffect(() => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=Tokyo&appid=${process.env.GATSBY_API_WEATHER}`
+      `https://api.openweathermap.org/data/2.5/weather?q=Tokyo&appid=${process.env.GATSBY_API_WEATHER}`
     )
       .then(res => res.json())
       .then(data => {
