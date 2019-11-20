@@ -7,7 +7,7 @@ import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
   return (
-    <footer className="bg-black mt-10">
+    <footer className="bg-gray-900 mt-10">
       <div className="container mx-auto">
         <div
           id="main-footer"
