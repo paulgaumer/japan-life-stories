@@ -32,7 +32,7 @@ const FeaturedCard = ({ article }) => {
             <p className="text-xl text-gray-700">- with {art.interviewee}</p>
             <div className="break-words pt-6">{art.summary}</div>
             <Link
-              to={`/${art.slug.current}`}
+              to={`/stories/${art.slug.current}`}
               className="text-sm text-orange-500 font-semibold hover:text-orange-400"
             >
               Read the full interview...

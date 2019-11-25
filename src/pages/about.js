@@ -5,9 +5,9 @@ import SEO from "../components/seo"
 const About = ({ location }) => {
   return (
     <Layout location={location}>
-      <SEO title="About" />
-      <div className="pb-8">
-        <h2 className="text-4xl text-center mt-16">
+      <SEO title="About us" />
+      <div className="pb-8 leading-loose">
+        <h2 className="text-4xl text-center mt-16 text-gray-700">
           Thank you very much for visiting Japan Life Stories!
         </h2>
 
@@ -15,14 +15,16 @@ const About = ({ location }) => {
           The idea of JLS started after hearing dozens of foreigners, from all
           nationalities and walks of life, ask the same question:
         </p>
-        <p className="font-bold">"How can I start a life in Japan?"</p>
+        <p className="font-bold text-lg pt-8 pb-4 text-center">
+          "How can I start a life in Japan?"
+        </p>
 
         <p className="mt-5">
           Some were motivated by a passion for the country, others by family
           reasons but all were facing the same issue: the lack of insights on
           how to get started. The paperwork-heavy administration, complex layers
           in interpersonal communication, extensive language nuances and a very
-          unique culture quickly add up, forming an impressive amount of
+          unique culture quickly add up, forming an overwhelming amount of
           challenges.
         </p>
 
@@ -34,12 +36,13 @@ const About = ({ location }) => {
         </p>
 
         <h3 className="text-2xl mt-10">
-          This is our mission at Japan Life Stories!
+          To share the knowledge of foreigners who built a successful life in
+          Japan!
         </h3>
 
         <p className="mt-5">
-          Share the knowledge of foreigners who built a successful life in Japan
-          and help others achieve the same dream.
+          This is our mission. We are here to help others achieve the same
+          dream.
         </p>
 
         <p className="mt-5">
@@ -50,46 +53,68 @@ const About = ({ location }) => {
           multiple threads and inspiration can be found in many stories.
         </p>
 
-        <div className="mt-10 p-6 border-2 border-black border-solid rounded text-center">
-          <p className="text-lg text-gray-800 mb-3 font-medium">
-            Would you enjoy a step-by-step process to structure your move to
-            Japan?{" "}
-          </p>
-          <p></p>
-          <p>
-            Join our newsletter and we'll keep you updated on our upcoming
-            guidebook on how to get your life in Japan started.
-          </p>
-          <form className="w-full flex items-center justify-center mt-4">
-            <label className="invisible w-0" htmlFor="newsletter-email-input">
-              Newsletter subscription input
-            </label>
-            <input
-              type="email"
-              id="newsletter-email-input"
-              placeholder="bob@gmail.com"
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
-            />
-            <button
-              className="flex-shrink-0 bg-orange-400 hover:bg-orange-500 border-orange-400 hover:border-orange-500 text-sm border-4 text-white py-1 px-2 rounded"
-              type="submit"
-            >
-              Sign Up
-            </button>
-          </form>
-        </div>
-
-        <h3 className="text-2xl mt-10">Meet the team</h3>
+        <h3 className="text-3xl mt-10">Meet our team</h3>
+        <h4 className="text-xl mt-5 font-medium">Paul Gaumer</h4>
         <p className="mt-5">
-          Paul Gaumer spent the past 10 years living, working and building a
-          life in Japan. French national, Paul experienced in a decade a wide
-          range of situations an expatriate could face. From graduating from a
-          Japanese university to working and recruiting for both international
-          and local companies. From creating a company, disrupting a whole
-          industry, hiring and managing talents to selling a company. He is now
-          traveling back and forth between France and Japan, helping people
-          succeed in Japan and collaborating on several startup projects.
+          Paul spent the past 10 years living, working and building a life in
+          Japan.
         </p>
+        <p className="mt-5">
+          French national, Paul experienced in a decade a wide range of
+          situations an expatriate could face:
+        </p>
+        <ul className="mt-5 list-disc list-inside">
+          <li>Studied in a Japanese University</li>
+          <li>Employed by both Japanese & International firms</li>
+          <li>Recruited for Forbes 500 companies</li>
+          <li>Became entrepreneur & created his company in Japan</li>
+          <li>
+            Developed a whole new industry and helped hundreds of people change
+            their lives through learning how to code
+          </li>
+          <li>Hired and managed talents</li>
+          <li>Sold his company</li>
+        </ul>
+        <p className="mt-5">
+          He is now traveling back and forth between France and Tokyo, helping
+          people succeed in Japan and collaborating on several startup projects.
+        </p>
+      </div>
+
+      <div className="mt-10 p-6 pt-8 border-4 border-red-500 border-solid rounded-lg text-center">
+        <p className="text-xl text-blue-800 mb-3 font-medium">
+          Would you enjoy a step-by-step guide to start your career in Japan?{" "}
+        </p>
+        <div>
+          <p className="text-2xl text-blue-700 mt-8">
+            Learn the 5 key steps to finding a job you love in Japan!
+          </p>
+          <p className="text-lg text-gray-800 mt-8">
+            Our upcoming mentorship program provides a clear & actionable road
+            map on how to reach your dream career.
+          </p>
+          <p className="text-lg text-gray-800 mt-3">
+            Let us share with you a decade worth of experience on the Japanese
+            job market.
+          </p>
+        </div>
+        <form className="w-full flex items-center justify-center mt-4">
+          <label className="invisible w-0" htmlFor="newsletter-email-input">
+            Newsletter subscription input
+          </label>
+          <input
+            type="email"
+            id="newsletter-email-input"
+            placeholder="alex@gmail.com"
+            className="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
+          />
+          <button
+            className="flex-shrink-0 bg-red-500 hover:bg-red-400 border-red-500 hover:border-red-400 text-sm border-4 text-white py-1 px-2 rounded"
+            type="submit"
+          >
+            Keep me updated
+          </button>
+        </form>
       </div>
     </Layout>
   )
