@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Contact = () => {
+const Contact = ({ location }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Contact" />
       <h1>Hi from the second page</h1>
       <p>Welcome to page 2</p>

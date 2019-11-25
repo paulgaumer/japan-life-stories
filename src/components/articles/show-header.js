@@ -77,7 +77,9 @@ const ShowHeader = ({ article }) => {
             <h3 className="text-4xl text-gray-800 font-semibold">
               {article.title}
             </h3>
-            <p className="text-lg text-gray-600">- {article.interviewee} -</p>
+            <p className="text-lg text-gray-600">
+              - with {article.interviewee} -
+            </p>
             <ul className="mt-4">
               {socials.map(social => {
                 let icon = null

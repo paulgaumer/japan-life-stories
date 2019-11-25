@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
     result.data.allSanityPost.edges.forEach(edge => {
       createPage({
         // Path for this page — required
-        path: `${edge.node.slug.current}`,
+        path: `/stories/${edge.node.slug.current}`,
         component: articleShowTemplate,
         context: { articleId: edge.node.id },
       })

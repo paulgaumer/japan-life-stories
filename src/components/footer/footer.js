@@ -7,7 +7,7 @@ import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
   return (
-    <footer className="bg-black mt-10">
+    <footer className="bg-gray-900 mt-10">
       <div className="container mx-auto">
         <div
           id="main-footer"
@@ -15,9 +15,9 @@ const Footer = () => {
         >
           <div className="md:pr-20">
             <h4 className="uppercase pb-3 md:pb-5 text-gray-100">Services</h4>
-            <ul className="font-light">
+            <ul className="list-none list-outside font-light">
               <li className="hover:text-orange-400">
-                <Link to="/about">About</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li className="hover:text-orange-400">
                 <Link to="/contact">Contact</Link>
@@ -82,7 +82,7 @@ const Footer = () => {
         {/* SUBFOOTER */}
         <div
           id="sub-footer"
-          className="text-gray-600 border-t border-gray-900 py-3 flex flex-col-reverse md:flex-row  items-center md:justify-between"
+          className="text-gray-600 font-light border-t border-gray-900 py-3 flex flex-col-reverse md:flex-row  items-center md:justify-between"
         >
           <p className="">© Japan Life Stories</p>
           <div className="pb-4 md:pb-0">
