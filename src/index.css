@@ -10,4 +10,12 @@ ol {
 @tailwind components;
 @tailwind utilities;
 
+@responsive {
+  .sticky-nav {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  }
+}
+
 /* Your custom CSS here */

@@ -10,7 +10,7 @@ const FeaturedCard = ({ article }) => {
       <Link to={`/stories/${art.slug.current}`} className="">
         {/* <div className="lg:flex items-center mt-8 bg-orange-100 border-solid border-0 rounded"> */}
         <div
-          className="lg:flex items-center mt-8 rounded"
+          className="lg:flex items-center mt-8 rounded-t"
           style={{
             borderTop: "1px solid #e2e8f0",
             borderLeft: "1px solid #e2e8f0",
