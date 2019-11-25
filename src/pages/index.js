@@ -17,7 +17,7 @@ const IndexPage = ({ data, location }) => {
     <Layout location={location}>
       <SEO title="Podcast" />
       <FeaturedSection article={latestArticle} />
-      <div id="home-body" className="pt-8 px-8 md:flex">
+      <div id="home-body" className="pt-24 px-8 md:flex">
         <div id="articles" className="md:w-3/4 md:pr-16">
           <ArticlesList articles={archives} />
         </div>

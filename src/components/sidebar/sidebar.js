@@ -20,7 +20,7 @@ const Sidebar = () => {
   `)
   const articles = data.allSanityPost.edges
   return (
-    <div className="pt-10">
+    <div>
       <div>
         <h2 className="text-2xl text-gray-800 font-titles">
           Join our newsletter

@@ -61,7 +61,7 @@ const TopBar = () => {
           </a>
           <a
             href="https://www.instagram.com/japan_life_stories/"
-            className="text-lg pr-3 hover:text-orange-400"
+            className="text-lg hover:text-orange-400"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
