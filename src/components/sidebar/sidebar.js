@@ -44,14 +44,14 @@ const Sidebar = () => {
       <div className="mt-12">
         <h2 className="text-2xl mb-4 text-gray-800">Recent Stories</h2>
         <div>
-          <ul>
+          <ul className="list-none">
             {articles.map(({ node }) => {
               return (
                 <li
                   className="hover:text-orange-400 mb-4 text-sm"
                   key={node.id}
                 >
-                  <Link to={`/${node.slug.current}`}>{node.title}</Link>
+                  <Link to={`/stories/${node.slug.current}`}>{node.title}</Link>
                 </li>
               )
             })}

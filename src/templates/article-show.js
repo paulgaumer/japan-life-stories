@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/sidebar"
 import ShowHeader from "../components/articles/show-header"
 import ShowMain from "../components/articles/show-main"
+import PodcastPlayer from "../components/widget/podcast-player"
 
 const ArticleShow = ({ data, location }) => {
   const article = data.sanityPost
@@ -15,6 +16,7 @@ const ArticleShow = ({ data, location }) => {
         title={`${article.title} - ${article.interviewee}`}
         description={article.summary}
       />
+      <PodcastPlayer />
       <ShowHeader article={article} />
       <div id="article-show-body" className="pt-16 px-8 md:flex">
         <div className="md:w-3/4 md:pr-16">

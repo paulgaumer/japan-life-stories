@@ -1,5 +1,21 @@
 @tailwind base;
+
+ul {
+  @apply list-disc list-inside;
+}
+ol {
+  @apply list-decimal list-inside;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+@responsive {
+  .sticky-nav {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  }
+}
 
 /* Your custom CSS here */
