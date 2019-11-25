@@ -3,7 +3,7 @@ import FeaturedCard from "./featured-card"
 
 const FeaturedSection = ({ article }) => {
   return (
-    <div>
+    <div className="pt-16 px-8">
       <h2 className="text-2xl uppercase font-bold text-gray-800 font-titles">
         Latest Life Story
       </h2>

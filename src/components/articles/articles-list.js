@@ -4,7 +4,7 @@ import ArticleCard from "./article-card"
 const ArticlesList = props => {
   const { articles } = props
   return (
-    <div className="mt-12">
+    <div className="">
       {articles.map(({ node }) => {
         return <ArticleCard article={node} key={node.id} />
       })}
