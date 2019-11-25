@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
+// import { Link, graphql, useStaticQuery } from "gatsby"
 // import Img from "gatsby-image"
 import podcastBannerNoCity from "../../images/podcast-banner-no-city.png"
 // import podcastBanner from "../../images/podcast-banner.png"

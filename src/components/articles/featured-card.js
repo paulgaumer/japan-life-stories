@@ -26,10 +26,12 @@ const FeaturedCard = ({ article }) => {
             />
           </div>
           <div className="lg:w-2/3 pl-8 pr-4 py-4">
-            <h3 className="text-3xl text-gray-900 font-semibold">
+            <h3 className="text-3xl text-gray-900 font-semibold font-titles">
               {art.title}
             </h3>
-            <p className="text-xl text-gray-700">- with {art.interviewee}</p>
+            <p className="text-xl text-gray-700 font-titles">
+              - with {art.interviewee}
+            </p>
             <div className="break-words pt-6">{art.summary}</div>
             <Link
               to={`/stories/${art.slug.current}`}

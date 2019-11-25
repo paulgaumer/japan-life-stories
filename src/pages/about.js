@@ -7,7 +7,7 @@ const About = ({ location }) => {
     <Layout location={location}>
       <SEO title="About us" />
       <div className="pb-8 leading-loose">
-        <h2 className="text-4xl text-center mt-16 text-gray-700">
+        <h2 className="text-4xl text-center mt-16 text-gray-700 font-titles">
           Thank you very much for visiting Japan Life Stories!
         </h2>
 
@@ -53,7 +53,7 @@ const About = ({ location }) => {
           multiple threads and inspiration can be found in many stories.
         </p>
 
-        <h3 className="text-3xl mt-10">Meet our team</h3>
+        <h3 className="text-3xl mt-10 font-titles">Meet our team</h3>
         <h4 className="text-xl mt-5 font-medium">Paul Gaumer</h4>
         <p className="mt-5">
           Paul spent the past 10 years living, working and building a life in

@@ -24,6 +24,10 @@ module.exports = {
       "-56": "-14rem",
       "-64": "-16rem",
     },
+    fontFamily: {
+      sans: "Open Sans",
+      titles: ["Maven Pro", "sans-serif"],
+    },
   },
   variants: {},
   plugins: [],

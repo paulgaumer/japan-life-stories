@@ -1,5 +1,9 @@
 @tailwind base;
 
+body {
+  font-family: "Open Sans", "sans-serif"
+}
+
 ul {
   @apply list-disc list-inside;
 }

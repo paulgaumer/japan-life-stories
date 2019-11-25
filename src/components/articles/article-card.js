@@ -9,8 +9,10 @@ const ArticleCard = ({ article }) => {
         <div className="md:w-3/5 lg:w-3/4 md:pr-8">
           <div className="flex justify-between items-center md:block">
             <div>
-              <h3 className="text-3xl text-gray-900">{article.title}</h3>
-              <p className="text-xl text-gray-700">
+              <h3 className="text-3xl text-gray-900 font-titles">
+                {article.title}
+              </h3>
+              <p className="text-xl text-gray-700 font-titles">
                 - with {article.interviewee}
               </p>
             </div>
