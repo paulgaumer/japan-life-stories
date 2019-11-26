@@ -26,7 +26,6 @@ const TopBar = () => {
     )
       .then(res => res.json())
       .then(data => {
-        console.log(data)
         setCurrentTokyoWeather(data)
       })
   }, [])

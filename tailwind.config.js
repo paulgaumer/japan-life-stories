@@ -32,7 +32,7 @@ module.exports = {
     },
   },
   variants: {
-    border: ["first", "last"],
+    borderWidth: ["first", "last"],
   },
   plugins: [],
 }
