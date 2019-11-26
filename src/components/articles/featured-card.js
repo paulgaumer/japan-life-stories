@@ -30,7 +30,7 @@ const FeaturedCard = ({ article }) => {
               {art.title}
             </h3>
             <p className="text-xl text-gray-700 font-titles">
-              - with {art.interviewee}
+              <span className="text-orange-500">-</span> with {art.interviewee}
             </p>
             <div className="break-words pt-6">{art.summary}</div>
             <Link

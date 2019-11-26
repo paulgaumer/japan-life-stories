@@ -74,7 +74,7 @@ const ShowHeader = ({ article }) => {
           />
 
           <div className="w-2/3 absolute bottom-0 py-6 bg-white rounded text-center -bottom-20 ">
-            <h3 className="text-4xl text-gray-800 font-semibold">
+            <h3 className="text-2xl md:text-4xl text-gray-800 font-medium">
               {article.title}
             </h3>
             <p className="text-lg text-gray-600">

@@ -32,7 +32,7 @@ const TopBar = () => {
 
   return (
     <header className="bg-red-700">
-      <div className="md:max-w-7xl mx-auto my-0 py-2 text-xs text-white flex items-center justify-center md:justify-between">
+      <div className="md:max-w-7xl mx-auto my-0 text-xs text-white flex items-center justify-center md:justify-between">
         <div className="hidden md:block font-medium">
           <Link to="/" className="flex items-center">
             <img
@@ -48,19 +48,19 @@ const TopBar = () => {
         <div className="flex items-center">
           <a
             href="https://twitter.com/JPLifeStories"
-            className="text-lg pr-3 hover:text-orange-400"
+            className="text-lg pr-3 hover:text-red-200"
           >
             <FontAwesomeIcon icon={faTwitterSquare} />
           </a>
           <a
             href="https://www.facebook.com/JapanLifeStories"
-            className="text-lg pr-3 hover:text-orange-400"
+            className="text-lg pr-3 hover:text-red-200"
           >
             <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
           <a
             href="https://www.instagram.com/japan_life_stories/"
-            className="text-lg hover:text-orange-400"
+            className="text-lg hover:text-red-200"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
