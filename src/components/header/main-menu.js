@@ -38,13 +38,13 @@ const MainMenu = () => {
         />
       </Link>
       <div>
-        <Link to="/" className="pr-16 md:pr-10 hover:font-medium">
+        <Link to="/" className="px-8 hover:font-medium">
           Stories
         </Link>
-        <Link to="/about" className="pr-16 md:pr-10 hover:font-medium">
+        <Link to="/about" className="px-8 hover:font-medium">
           About
         </Link>
-        <Link to="/contact" className="hover:font-medium">
+        <Link to="/contact" className="px-8 hover:font-medium">
           Contact
         </Link>
       </div>
