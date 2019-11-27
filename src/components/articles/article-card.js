@@ -41,7 +41,7 @@ const ArticleCard = ({ article }) => {
             <Img
               fluid={article.mainImage.asset.fluid}
               alt={`portrait of ${article.interviewee}`}
-              className="h-full lg:h-56 object-cover"
+              className="h-full lg:h-56 object-cover rounded-sm"
               imgStyle={{ objectPosition: "center" }}
             />
           </div>

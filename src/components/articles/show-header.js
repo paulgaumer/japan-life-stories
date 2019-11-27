@@ -64,6 +64,7 @@ const ShowHeader = ({ article }) => {
         Tag="div"
         fluid={image.file.childImageSharp.fluid}
         className=""
+        style={{ backgroundPosition: "center center" }}
       >
         <div className="flex flex-col items-center relative pb-20">
           <Img
