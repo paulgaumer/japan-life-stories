@@ -27,7 +27,8 @@ const EbookCta = () => {
         </h3>
 
         <p className="text-sm text-gray-800 pt-4 px-12">
-          Over 15 pages of insider tips to explore Japan smarter or for free
+          Over 15 pages of insider tips to explore Japan smarter or even travel
+          for free
         </p>
       </div>
 
