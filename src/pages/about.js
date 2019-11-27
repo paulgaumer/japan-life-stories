@@ -91,7 +91,7 @@ const About = ({ location }) => {
           </p>
           <p className="text-lg text-gray-800 mt-8">
             Our upcoming mentorship program provides a clear & actionable road
-            map on how to reach your dream career.
+            map to reach your dream career.
           </p>
           <p className="text-lg text-gray-800 mt-3">
             Let us share with you a decade worth of experience on the Japanese

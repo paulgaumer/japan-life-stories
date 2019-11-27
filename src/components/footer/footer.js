@@ -4,14 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
+import PodcastSubscribeList from "../widget/podcast-subscribe-btn"
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 mt-10">
-      <div className="container mx-auto">
+      <div className="container mx-auto md:max-w-7xl">
         <div
           id="main-footer"
-          className="py-10 text-gray-400 md:flex justify-center text-center"
+          className="pt-10 text-gray-400 md:flex justify-center text-center"
         >
           <div className="md:pr-20">
             <h4 className="uppercase pb-3 md:pb-5 text-gray-100">Services</h4>
@@ -67,10 +68,10 @@ const Footer = () => {
                 type="email"
                 id="newsletter-email-input"
                 placeholder="alex@gmail.com"
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-sm py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
               />
               <button
-                className="flex-shrink-0 bg-orange-400 hover:bg-orange-500 border-orange-400 hover:border-orange-500 text-sm border-4 text-white py-1 px-2 rounded"
+                className="flex-shrink-0 bg-orange-500 hover:bg-orange-400 border-orange-500 hover:border-orange-400 text-sm border-4 text-white py-1 px-2 rounded-sm"
                 type="submit"
               >
                 Sign Up
@@ -79,10 +80,17 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="flex flex-col items-center justify-start pt-10 md:pt-12 pb-12">
+          <h4 className="uppercase pb-3 md:pb-5 text-gray-100">
+            Subsribe to the podcast
+          </h4>
+          <PodcastSubscribeList />
+        </div>
+
         {/* SUBFOOTER */}
         <div
           id="sub-footer"
-          className="text-gray-600 font-light border-t border-gray-900 py-3 flex flex-col-reverse md:flex-row  items-center md:justify-between"
+          className="text-gray-600 font-light border-t border-gray-800 py-3 flex flex-col-reverse md:flex-row  items-center md:justify-between text-sm md:text-sm"
         >
           <p className="">© Japan Life Stories</p>
           <div className="pb-4 md:pb-0">

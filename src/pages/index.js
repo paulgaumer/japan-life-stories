@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import FeaturedSection from "../components/articles/featured-section"
 import Sidebar from "../components/sidebar/sidebar"
 import ArticlesList from "../components/articles/articles-list"
+import PodcastSubscribeList from "../components/widget/podcast-subscribe-btn"
 
 const IndexPage = ({ data, location }) => {
   const allArticles = data.allSanityPost.edges
@@ -16,9 +17,12 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO title="Podcast" />
-      <div id="home-body" className="pt-16 px-8 md:flex">
+      <div className="justify-center pt-2 hidden md:flex">
+        <PodcastSubscribeList />
+      </div>
+      <FeaturedSection article={latestArticle} />
+      <div id="home-body" className="pt-24 px-8 md:flex">
         <div id="articles" className="md:w-3/4 md:pr-16">
-          <FeaturedSection article={latestArticle} />
           <ArticlesList articles={archives} />
         </div>
         <div id="sidebar" className="w-1/4 hidden md:block">

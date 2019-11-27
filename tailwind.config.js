@@ -3,6 +3,8 @@ module.exports = {
     extend: {
       maxWidth: {
         "7xl": "77rem",
+        "8xl": "87rem",
+        "9xl": "100rem",
       },
     },
     inset: {
@@ -29,6 +31,8 @@ module.exports = {
       titles: ["Maven Pro", "sans-serif"],
     },
   },
-  variants: {},
+  variants: {
+    borderWidth: ["first", "last"],
+  },
   plugins: [],
 }

@@ -6,11 +6,17 @@ const serializers = {
     block(props) {
       switch (props.node.style) {
         case "h2":
-          return <h2 className="text-3xl my-10 font-titles">{props.children}</h2>
+          return (
+            <h2 className="text-3xl my-10 font-titles">{props.children}</h2>
+          )
         case "h3":
-          return <h2 className="text-2xl my-10 font-titles">{props.children}</h2>
+          return (
+            <h2 className="text-2xl my-10 font-titles">{props.children}</h2>
+          )
         case "h4":
-          return <h2 className="text-xl mt-8 mb-6 font-titles">{props.children}</h2>
+          return (
+            <h2 className="text-xl mt-8 mb-6 font-titles">{props.children}</h2>
+          )
         default:
           return <p className="mb-6 leading-relaxed">{props.children}</p>
       }
@@ -23,7 +29,7 @@ const serializers = {
           href={mark.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-red-600 underline"
+          className="text-red-600"
         >
           {children}
         </a>
