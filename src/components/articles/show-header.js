@@ -71,7 +71,7 @@ const ShowHeader = ({ article }) => {
             fluid={article.mainImage.asset.fluid}
             alt={`portrait of ${article.interviewee}`}
             className="w-40 h-40 object-cover rounded-full my-8"
-            // imgStyle={{ objectPosition: "top" }}
+            imgStyle={{ objectPosition: "top" }}
           />
 
           <div className="w-2/3 absolute bottom-0 py-6 bg-white rounded text-center -bottom-20 ">
