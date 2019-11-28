@@ -92,13 +92,15 @@ const Footer = () => {
           id="sub-footer"
           className="text-gray-600 font-light border-t border-gray-800 py-3 flex flex-col-reverse md:flex-row  items-center md:justify-between text-sm md:text-sm"
         >
-          <p className="">© Japan Life Stories</p>
+          <a href="/">
+            <p className="">© Japan Life Stories</p>
+          </a>
           <div className="pb-4 md:pb-0">
             <span>
-              <a href="https://google.com" className="pr-4">
+              <a href="https://japanlifestories/legal/terms" className="pr-4">
                 Terms of Service
               </a>
-              <a href="https://google.com" className="pr-4">
+              <a href="https://japanlifestories/legal/privacy" className="pr-4">
                 Privacy Policy
               </a>
               <a href="https://google.com">Site Map</a>
