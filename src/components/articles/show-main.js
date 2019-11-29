@@ -11,11 +11,23 @@ const serializers = {
           )
         case "h3":
           return (
-            <h2 className="text-2xl my-10 font-titles">{props.children}</h2>
+            <h3 className="text-2xl my-10 font-titles">{props.children}</h3>
           )
         case "h4":
           return (
-            <h2 className="text-xl mt-8 mb-6 font-titles">{props.children}</h2>
+            <h4 className="text-xl mt-8 mb-6 font-titles">{props.children}</h4>
+          )
+        case "speaker_1":
+          return (
+            <h5 className="text-sm mt-8 mb-2 font-titles text-gray-800">
+              {props.children}
+            </h5>
+          )
+        case "speaker_2":
+          return (
+            <h5 className="text-sm mt-8 mb-2 font-titles text-red-500">
+              {props.children}
+            </h5>
           )
         default:
           return <p className="mb-6 leading-relaxed">{props.children}</p>
