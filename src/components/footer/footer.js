@@ -16,7 +16,7 @@ const Footer = () => {
         >
           <div className="md:pr-20">
             <h4 className="uppercase pb-3 md:pb-5 text-gray-100">Services</h4>
-            <ul className="list-none list-outside font-light">
+            <ul className="list-none list-outside font-light text-left">
               <li className="hover:text-orange-400">
                 <Link to="/about">About Us</Link>
               </li>
@@ -82,7 +82,7 @@ const Footer = () => {
 
         <div className="flex flex-col items-center justify-start pt-10 md:pt-12 pb-12">
           <h4 className="uppercase pb-3 md:pb-5 text-gray-100">
-            Subsribe to the podcast
+            Subscribe to the podcast
           </h4>
           <PodcastSubscribeList />
         </div>
