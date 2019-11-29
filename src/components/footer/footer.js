@@ -37,33 +37,21 @@ const Footer = () => {
                 href="https://twitter.com/JPLifeStories"
                 className="md:pr-3 hover:text-orange-400 font-light"
               >
-                <FontAwesomeIcon
-                  icon={faTwitterSquare}
-                  width="16"
-                  className="mr-2"
-                />
+                <FontAwesomeIcon icon={faTwitterSquare} className="mr-2" />
                 Twitter
               </a>
               <a
                 href="https://www.facebook.com/JapanLifeStories"
                 className="md:pr-3 hover:text-orange-400 font-light"
               >
-                <FontAwesomeIcon
-                  icon={faFacebookSquare}
-                  width="16"
-                  className="mr-2"
-                />
+                <FontAwesomeIcon icon={faFacebookSquare} className="mr-2" />
                 Facebook
               </a>
               <a
                 href="https://www.instagram.com/japan_life_stories/"
                 className="md:pr-3 hover:text-orange-400 font-light"
               >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  width="16"
-                  className="mr-2"
-                />
+                <FontAwesomeIcon icon={faInstagram} className="mr-2" />
                 Instagram
               </a>
             </div>
