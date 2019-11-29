@@ -10,7 +10,7 @@ import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
 const TopBar = () => {
   const [currentTokyoTime, setCurrentTokyoTime] = useState("")
   const [currentTokyoWeather, setCurrentTokyoWeather] = useState({
-    weather: [{ icon: "https://openweathermap.org/img/wn/10d.png" }],
+    weather: [{ icon: "10d" }],
   })
 
   useEffect(() => {

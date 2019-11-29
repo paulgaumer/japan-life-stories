@@ -37,7 +37,7 @@ const EbookCta = () => {
         alt="JLS Ebook"
         className=""
       />
-      <form action="http://google.com" target="_blank">
+      <form action="https://google.com" target="_blank">
         <input
           type="submit"
           value="Get a copy"

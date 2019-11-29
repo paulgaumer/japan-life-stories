@@ -16,7 +16,7 @@ const Footer = () => {
         >
           <div className="md:pr-20">
             <h4 className="uppercase pb-3 md:pb-5 text-gray-100">Services</h4>
-            <ul className="list-none list-outside font-light text-left">
+            <ul className="list-none list-outside font-light md:text-left">
               <li className="hover:text-orange-400">
                 <Link to="/about">About Us</Link>
               </li>
@@ -37,21 +37,33 @@ const Footer = () => {
                 href="https://twitter.com/JPLifeStories"
                 className="md:pr-3 hover:text-orange-400 font-light"
               >
-                <FontAwesomeIcon icon={faTwitterSquare} className="mr-2" />
+                <FontAwesomeIcon
+                  icon={faTwitterSquare}
+                  width="16"
+                  className="mr-2"
+                />
                 Twitter
               </a>
               <a
                 href="https://www.facebook.com/JapanLifeStories"
                 className="md:pr-3 hover:text-orange-400 font-light"
               >
-                <FontAwesomeIcon icon={faFacebookSquare} className="mr-2" />
+                <FontAwesomeIcon
+                  icon={faFacebookSquare}
+                  width="16"
+                  className="mr-2"
+                />
                 Facebook
               </a>
               <a
                 href="https://www.instagram.com/japan_life_stories/"
                 className="md:pr-3 hover:text-orange-400 font-light"
               >
-                <FontAwesomeIcon icon={faInstagram} className="mr-2" />
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  width="16"
+                  className="mr-2"
+                />
                 Instagram
               </a>
             </div>
