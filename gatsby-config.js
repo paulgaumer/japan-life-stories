@@ -25,6 +25,25 @@ module.exports = {
         // token: process.env.MY_SANITY_TOKEN,
       },
     },
+    {
+      resolve: "gatsby-plugin-iubenda-cookie-footer",
+      options: {
+        iubendaOptions: {
+          enableCMP: true,
+          googleAdsPreferenceManagement: true,
+          lang: "en",
+          siteId: 1735679,
+          cookiePolicyId: 31783187,
+          cookiePolicyUrl:
+            "https://5de18728c6970000086400ef--japanlifestories.netlify.com/legal/privacy",
+          banner: {
+            acceptButtonDisplay: true,
+            customizeButtonDisplay: true,
+            position: "float-top-center",
+          },
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
@@ -40,11 +59,11 @@ module.exports = {
         fonts: [
           {
             family: `Maven Pro`,
-            variants: [`400`, `500`, `700`, `900`]
+            variants: [`400`, `500`, `700`, `900`],
           },
           {
             family: `Open Sans`,
-            variants: [`300`,`400`, `600`, `700`, `800`]
+            variants: [`300`, `400`, `600`, `700`, `800`],
           },
         ],
       },
