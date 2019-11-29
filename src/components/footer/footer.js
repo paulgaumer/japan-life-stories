@@ -107,17 +107,17 @@ const Footer = () => {
           <a href="/">
             <p className="">© Japan Life Stories</p>
           </a>
-          <div className="pb-4 md:pb-0">
+          <Link className="pb-4 md:pb-0">
             <span>
-              <a href="https://japanlifestories/legal/terms" className="pr-4">
+              <Link to="/legal/terms" className="pr-4">
                 Terms of Service
-              </a>
-              <a href="https://japanlifestories/legal/privacy" className="pr-4">
+              </Link>
+              <Link to="/legal/privacy" className="pr-4">
                 Privacy Policy
-              </a>
+              </Link>
               <a href="https://google.com">Site Map</a>
             </span>
-          </div>
+          </Link>
         </div>
       </div>
     </footer>
