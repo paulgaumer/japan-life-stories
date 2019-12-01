@@ -12,7 +12,7 @@ const About = ({ location }) => {
         </h2>
 
         <p className="mt-20">
-          The idea of JLS started after hearing dozens of foreigners, from all
+          Our platform started after hearing dozens of foreigners, from all
           nationalities and walks of life, ask the same question:
         </p>
         <p className="font-bold text-lg pt-8 pb-4 text-center">
@@ -22,10 +22,12 @@ const About = ({ location }) => {
         <p className="mt-5">
           Some were motivated by a passion for the country, others by family
           reasons but all were facing the same issue: the lack of insights on
-          how to get started. The paperwork-heavy administration, complex layers
-          in interpersonal communication, extensive language nuances and a very
-          unique culture quickly add up, forming an overwhelming amount of
-          challenges.
+          how to get started.
+        </p>
+        <p className="mt-5">
+          The paperwork-heavy administration, complex layers in interpersonal
+          communication, extensive language nuances and a very unique culture
+          quickly add up, forming an overwhelming amount of challenges.
         </p>
 
         <p className="mt-5">
@@ -49,8 +51,11 @@ const About = ({ location }) => {
           While a few great blogs and platforms also understood this need and
           specialised in niche areas like startups & entrepreneurship, we chose
           diversity. We decided to share the stories of foreigners only, all
-          from many different backgrounds for one reason: one's dream is made of
-          multiple threads and inspiration can be found in many stories.
+          from many different backgrounds, for one reason:{" "}
+          <span className="italic font-semibold">
+            one's dream is made of multiple threads and inspiration can be found
+            in many stories.
+          </span>
         </p>
 
         <h3 className="text-3xl mt-10 font-titles">Meet our team</h3>
@@ -81,7 +86,7 @@ const About = ({ location }) => {
         </p>
       </div>
 
-      <div className="mt-10 p-6 pt-8 border-4 border-red-500 border-solid rounded-lg text-center">
+      <div className="mt-10 p-6 pt-10 border-4 border-red-500 border-solid rounded-lg text-center">
         <p className="text-xl text-blue-800 mb-3 font-medium">
           Would you enjoy a step-by-step guide to start your career in Japan?{" "}
         </p>
@@ -90,8 +95,8 @@ const About = ({ location }) => {
             Learn the 5 key steps to finding a job you love in Japan!
           </p>
           <p className="text-lg text-gray-800 mt-8">
-            Our upcoming mentorship program provides a clear & actionable road
-            map to reach your dream career.
+            Our upcoming mentorship program provides a clear & actionable
+            roadmap to reach your dream career.
           </p>
           <p className="text-lg text-gray-800 mt-3">
             Let us share with you a decade worth of experience on the Japanese

@@ -22,7 +22,7 @@ const FeaturedCard = ({ article }) => {
               fluid={art.mainImage.asset.fluid}
               alt={`portrait of ${art.interviewee}`}
               className="h-56 md:h-64 object-cover rounded-tl rounded-bl"
-              imgStyle={{ objectPosition: "top" }}
+              imgStyle={{ objectPosition: "center" }}
             />
           </div>
           <div className="lg:w-2/3 pl-8 pr-4 py-4">

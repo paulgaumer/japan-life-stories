@@ -3,11 +3,11 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
-import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
-import { faGlobe } from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+// import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
+// import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
+// import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 
 const ArticleHeader = styled.header`
   .background-gradient {
@@ -29,21 +29,21 @@ const ArticleHeader = styled.header`
   }
 `
 
-const SocialIcon = props => {
-  return (
-    <a
-      href={props.article.socials[props.social]}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-900 px-2"
-    >
-      <FontAwesomeIcon
-        icon={props.icon}
-        className="text-xl text-orange-400 hover:text-orange-500"
-      />
-    </a>
-  )
-}
+// const SocialIcon = props => {
+//   return (
+//     <a
+//       href={props.article.socials[props.social]}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       className="text-gray-900 px-2"
+//     >
+//       <FontAwesomeIcon
+//         icon={props.icon}
+//         className="text-xl text-orange-400 hover:text-orange-500"
+//       />
+//     </a>
+//   )
+// }
 
 const ShowHeader = ({ article }) => {
   const image = useStaticQuery(graphql`
@@ -57,7 +57,9 @@ const ShowHeader = ({ article }) => {
       }
     }
   `)
-  const socials = Object.keys(article.socials)
+
+  // const socials = Object.keys(article.socials)
+
   return (
     <ArticleHeader className="relative mt-1">
       <BackgroundImage
@@ -81,7 +83,7 @@ const ShowHeader = ({ article }) => {
             <p className="text-lg text-gray-600 font-titles">
               - with {article.interviewee} -
             </p>
-            <ul className="mt-4">
+            {/* <ul className="mt-4">
               {socials.map(social => {
                 let icon = null
                 switch (social) {
@@ -109,7 +111,7 @@ const ShowHeader = ({ article }) => {
                   />
                 )
               })}
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="background-gradient"></div>

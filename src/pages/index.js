@@ -37,7 +37,7 @@ export default IndexPage
 
 export const articlesQuery = graphql`
   query ArticlesQuery {
-    allSanityPost(sort: { order: ASC, fields: _createdAt }) {
+    allSanityPost(sort: { order: DESC, fields: _createdAt }) {
       edges {
         node {
           title

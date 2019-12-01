@@ -5,8 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header/header"
 import Footer from "./footer/footer"
 import "../index.css"
-// This ensures that the icon CSS is loaded immediately before attempting to render icons
-import "@fortawesome/fontawesome-svg-core/styles.css"
 
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
