@@ -60,7 +60,19 @@ const Footer = () => {
             <h4 className="uppercase pb-3 md:pb-5 text-gray-100">
               Join the newsletter
             </h4>
-            <form className="">
+            <form
+              name="contcat-footer"
+              method="POST"
+              className=""
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <p className="hidden">
+                <label>
+                  Don’t fill this out if you're human:{" "}
+                  <input name="bot-field" />
+                </label>
+              </p>
               <label className="hidden w-0" htmlFor="newsletter-email-input">
                 Newsletter subscription input
               </label>
