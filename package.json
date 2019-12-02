@@ -40,6 +40,7 @@
     "tailwindcss": "^1.1.2"
   },
   "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
     "prettier": "^1.18.2"
   },
   "keywords": [

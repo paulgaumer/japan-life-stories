@@ -38,20 +38,20 @@ const MainMenu = () => {
         />
       </Link>
       <div>
-        <Link to="/" className="px-8 hover:font-medium">
+        <Link to="/" className="px-4 md:px-8 hover:font-medium">
           Stories
         </Link>
-        <Link to="/about" className="px-8 hover:font-medium">
+        <Link to="/about" className="px-4 md:px-8 hover:font-medium">
           About
         </Link>
-        <Link to="/contact" className="px-8 hover:font-medium">
+        <Link to="/contact" className="px-4 md:px-8 hover:font-medium">
           Contact
         </Link>
         <a
           href="https://japanlifestories.ck.page/ebook"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 hover:font-medium"
+          className="px-4 md:px-8 hover:font-medium"
         >
           Ebook
         </a>

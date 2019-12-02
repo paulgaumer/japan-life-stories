@@ -34,5 +34,7 @@ module.exports = {
   variants: {
     borderWidth: ["first", "last"],
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/custom-forms'),
+  ],
 }
