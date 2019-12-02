@@ -61,7 +61,7 @@ const Footer = () => {
               Join the newsletter
             </h4>
             <form
-              name="contcat-footer"
+              name="contact-footer"
               method="POST"
               className=""
               data-netlify="true"
