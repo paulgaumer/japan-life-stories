@@ -27,17 +27,17 @@ const EbookCta = () => {
         </h3>
 
         <p className="text-sm text-gray-800 pt-4 px-12">
-          Over 15 pages of insider tips to explore Japan smarter or even travel
-          for free
+          Enjoy 20 pages of insider tips to explore Japan smarter, or even
+          travel for free
         </p>
       </div>
 
       <Img
         fluid={data.file.childImageSharp.fluid}
-        alt="JLS Ebook"
+        alt="japan Life Stories Ebook"
         className=""
       />
-      <form action="https://google.com" target="_blank">
+      <form action="https://japanlifestories.ck.page/ebook" target="_blank">
         <input
           type="submit"
           value="Get a copy"

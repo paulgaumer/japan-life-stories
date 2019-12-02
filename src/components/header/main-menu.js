@@ -47,6 +47,14 @@ const MainMenu = () => {
         <Link to="/contact" className="px-8 hover:font-medium">
           Contact
         </Link>
+        <a
+          href="https://japanlifestories.ck.page/ebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 hover:font-medium"
+        >
+          Ebook
+        </a>
       </div>
       {/* Empty div to allow space-between */}
       <div></div>
