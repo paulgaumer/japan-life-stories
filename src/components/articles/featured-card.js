@@ -42,7 +42,7 @@ const FeaturedCard = ({ article }) => {
           </div>
         </div>
       </Link>
-      <PodcastPlayer />
+      <PodcastPlayer podcastEpisodeId={art.podcastEpisodeId} />
     </>
   )
 }

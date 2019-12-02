@@ -49,6 +49,7 @@ export const articlesQuery = graphql`
           interviewee
           summary
           _rawBody
+          podcastEpisodeId
           mainImage {
             asset {
               fluid(maxWidth: 300) {

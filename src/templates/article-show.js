@@ -16,7 +16,7 @@ const ArticleShow = ({ data, location }) => {
         title={`${article.title} - ${article.interviewee}`}
         description={article.summary}
       />
-      <PodcastPlayer />
+      <PodcastPlayer podcastEpisodeId={article.podcastEpisodeId} />
       <ShowHeader article={article} />
       <div id="article-show-body" className="pt-16 px-8 md:flex">
         <div className="md:w-3/4 md:pr-16">
@@ -46,6 +46,7 @@ export const query = graphql`
       publishedAt(formatString: "LL")
       summary
       _rawBody
+      podcastEpisodeId
       mainImage {
         asset {
           fluid(maxWidth: 300) {
