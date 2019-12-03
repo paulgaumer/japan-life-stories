@@ -6,12 +6,12 @@ const About = ({ location }) => {
   return (
     <Layout location={location}>
       <SEO title="About us" />
-      <div className="pb-8 leading-loose">
-        <h2 className="text-4xl text-center mt-16 text-gray-700 font-titles">
+      <div className="md:pb-8 md:leading-loose px-10">
+        <h2 className="text-4xl text-center mt-8 md:mt-16 text-gray-700 font-titles">
           Thank you very much for visiting Japan Life Stories!
         </h2>
 
-        <p className="mt-20">
+        <p className="mt-12 md:mt-20">
           Our platform started after hearing dozens of foreigners, from all
           nationalities and walks of life, ask the same question:
         </p>
@@ -86,7 +86,7 @@ const About = ({ location }) => {
         </p>
       </div>
 
-      <div className="mt-10 p-6 pt-10 border-4 border-red-500 border-solid rounded-lg text-center">
+      <div className="mx-10 mt-10 mb-16 p-6 pt-10 border-4 border-red-500 border-solid rounded text-center">
         <p className="text-xl text-blue-800 mb-3 font-medium">
           Would you enjoy a step-by-step guide to start your career in Japan?{" "}
         </p>
@@ -103,7 +103,19 @@ const About = ({ location }) => {
             job market.
           </p>
         </div>
-        <form className="w-full flex items-center justify-center mt-4">
+        <form
+          className="w-full md:flex md:items-center md:justify-center mt-4"
+          name="about-page-mentorship-optin"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field-about"
+        >
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you're human:{" "}
+              <input name="bot-field-about" />
+            </label>
+          </p>
           <label className="invisible w-0" htmlFor="newsletter-email-input">
             Newsletter subscription input
           </label>
@@ -114,7 +126,7 @@ const About = ({ location }) => {
             className="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
           />
           <button
-            className="flex-shrink-0 bg-red-500 hover:bg-red-400 border-red-500 hover:border-red-400 text-sm border-4 text-white py-1 px-2 rounded"
+            className="flex-shrink-0 bg-red-500 hover:bg-red-400 border-red-500 hover:border-red-400 text-sm border-4 text-white py-1 px-2 rounded mt-4 md:mt-0 w-full md:w-auto"
             type="submit"
           >
             Keep me updated
