@@ -53,9 +53,16 @@ const serializers = {
 
 const ShowMain = ({ article }) => {
   return (
-    <div className="mt-16">
-      <PortableText blocks={article._rawBody} serializers={serializers} />
-    </div>
+    <>
+      <div className="mt-16">
+        <h4 className="font-titles italic text-gray-700">
+          (This is a transcript of the episode. Shownotes are at the end.)
+        </h4>
+      </div>
+      <div className="mt-10">
+        <PortableText blocks={article._rawBody} serializers={serializers} />
+      </div>
+    </>
   )
 }
 
