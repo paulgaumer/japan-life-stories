@@ -22,7 +22,7 @@ const PodcastSubscribeList = () => {
         <img src={overcast} alt="Overcast" className="m-2" />
       </a>
       <a
-        href="https://japanlifestories.com"
+        href="https://open.spotify.com/show/3mFkhjHzhE4IknTGhwUJvj"
         target="_blank"
         rel="noopener noreferrer"
       >
