@@ -7,16 +7,32 @@ import rss from "../../images/podcast_buttons/new_rss.svg"
 const PodcastSubscribeList = () => {
   return (
     <div className="md:flex">
-      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://japanlifestories.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={apple} alt="Apple Podcast" className="m-2" />
       </a>
-      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://japanlifestories.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={overcast} alt="Overcast" className="m-2" />
       </a>
-      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://japanlifestories.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={spotify} alt="Spotify" className="m-2" />
       </a>
-      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://feeds.buzzsprout.com/740042.rss"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={rss} alt="RSS" className="m-2" />
       </a>
     </div>
