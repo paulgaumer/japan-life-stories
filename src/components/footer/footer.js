@@ -8,7 +8,7 @@ import PodcastSubscribeList from "../widget/podcast-subscribe-btn"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 mt-10">
+    <footer className="bg-gray-900 mt-20">
       <div className="container mx-auto md:max-w-7xl">
         <div
           id="main-footer"
