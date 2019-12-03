@@ -19,6 +19,7 @@ const Contact = ({ location }) => {
             data-netlify="true"
             netlify-honeypot="bot-field-contact"
           >
+            <input type="hidden" name="form-name" value="contact-page" />
             <p className="hidden">
               <label>
                 Don’t fill this out if you're human:{" "}
