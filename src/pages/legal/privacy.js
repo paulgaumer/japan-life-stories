@@ -34,7 +34,7 @@ const Container = styled.div`
 const PrivacyPage = ({ location }) => (
   <Layout location={location}>
     <SEO title="Privacy and Cookies" />
-    <Container>
+    <Container className="px-6">
       <h1>Welcome to our Privacy Policy</h1>
       <h3>Your privacy is critically important to us.</h3>
       Japan Life Stories is located at:

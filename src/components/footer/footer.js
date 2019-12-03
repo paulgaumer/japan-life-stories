@@ -109,13 +109,13 @@ const Footer = () => {
           </a>
           <div className="pb-4 md:pb-0">
             <span>
-              <a href="https://japanlifestories/legal/terms" className="pr-4">
+              <Link to="/legal/terms" className="pr-4">
                 Terms of Service
-              </a>
-              <a href="https://japanlifestories/legal/privacy" className="pr-4">
+              </Link>
+              <Link to="/legal/privacy" className="">
                 Privacy Policy
-              </a>
-              <a href="https://google.com">Site Map</a>
+              </Link>
+              {/* <a href="https://google.com">Site Map</a> */}
             </span>
           </div>
         </div>
