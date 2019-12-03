@@ -43,7 +43,11 @@ const MainMenu = () => {
 
   return (
     <nav className="md:sticky-nav md:max-w-7xl mx-auto px-8 flex justify-around md:justify-between items-center pt-6 pb-4 bg-white border border-solid border-gray-300 border-t-0 border-r-0 border-b-2 border-l-0 uppercase text-sm md:text-lg text-gray-800 font-medium md:font-normal font-titles">
-      <Link to="/" aria-label="Link to the Homepage">
+      <Link
+        to="/"
+        aria-label="Link to the Homepage"
+        className="hidden md:inline-block"
+      >
         <MenuIcon>
           <Img
             fluid={icon.file.childImageSharp.fluid}

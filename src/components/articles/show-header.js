@@ -68,15 +68,15 @@ const ShowHeader = ({ article }) => {
         className=""
         style={{ backgroundPosition: "center center" }}
       >
-        <div className="flex flex-col items-center relative pb-20">
+        <div className="flex flex-col items-center relative pb-20 md:pb-8">
           <Img
             fluid={article.mainImage.asset.fluid}
             alt={`portrait of ${article.interviewee}`}
-            className="w-40 h-40 object-cover rounded-full my-8"
+            className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full my-8"
             imgStyle={{ objectPosition: "top" }}
           />
 
-          <div className="w-2/3 absolute bottom-0 py-6 bg-white rounded text-center -bottom-20 ">
+          <div className="w-4/5 md:w-2/3 absolute bottom-0 py-6 bg-white rounded text-center -bottom-20 ">
             <h3 className="text-2xl md:text-3xl text-gray-800 font-medium font-titles">
               {article.title}
             </h3>
