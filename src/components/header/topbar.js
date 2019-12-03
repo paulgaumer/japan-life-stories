@@ -49,18 +49,21 @@ const TopBar = () => {
           <a
             href="https://twitter.com/JPLifeStories"
             className="text-lg pr-3 hover:text-red-200"
+            aria-label="Link to Twitter"
           >
             <FontAwesomeIcon icon={faTwitterSquare} />
           </a>
           <a
             href="https://www.facebook.com/JapanLifeStories"
             className="text-lg pr-3 hover:text-red-200"
+            aria-label="Link to Facebook"
           >
             <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
           <a
             href="https://www.instagram.com/japan_life_stories/"
             className="text-lg hover:text-red-200"
+            aria-label="Link to Instagram"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
