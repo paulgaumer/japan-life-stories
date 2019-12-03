@@ -7,7 +7,7 @@ const EbookCta = () => {
     query {
       file(relativePath: { eq: "mockup_transparent_light.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 90) {
+          fluid(maxWidth: 300, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
