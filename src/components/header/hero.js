@@ -10,7 +10,7 @@ const Hero = () => {
       file(relativePath: { eq: "banner.png" }) {
         childImageSharp {
           fluid(maxWidth: 900, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
