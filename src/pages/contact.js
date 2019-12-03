@@ -33,6 +33,7 @@ const Contact = ({ location }) => {
                 <input
                   className="form-input mt-1 block w-full"
                   placeholder="Alex Brown"
+                  name="name"
                   required
                 />
               </label>
@@ -41,6 +42,7 @@ const Contact = ({ location }) => {
                 <input
                   className="form-input mt-1 block w-full"
                   placeholder="alex@gmail.com"
+                  name="email"
                   required
                 />
               </label>
@@ -51,6 +53,7 @@ const Contact = ({ location }) => {
                 class="form-textarea mt-1 block w-full"
                 rows="3"
                 placeholder="How can we help you?"
+                name="message"
                 required
               ></textarea>
             </label>
