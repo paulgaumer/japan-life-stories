@@ -3,7 +3,7 @@ require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
 module.exports = {
   siteMetadata: {
     title: `Japan Life Stories`,
-    description: `Inspiring stories from foreigners who built a life & career in Japan.`,
+    description: `Insights and success stories from foreigners who built a life & career in Japan.`,
     author: `Paul Gaumer`,
   },
   plugins: [
@@ -40,11 +40,11 @@ module.exports = {
         fonts: [
           {
             family: `Maven Pro`,
-            variants: [`400`, `500`, `700`, `900`]
+            variants: [`400`, `500`, `700`, `900`],
           },
           {
             family: `Open Sans`,
-            variants: [`300`,`400`, `600`, `700`, `800`]
+            variants: [`300`, `400`, `600`, `700`, `800`],
           },
         ],
       },
