@@ -26,6 +26,15 @@ const Footer = () => {
               <li className="hover:text-orange-400">
                 <Link to="/">Stories</Link>
               </li>
+              <li className="hover:text-orange-400">
+                <a
+                  href="https://japanlifestories.ck.page/ebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ebook
+                </a>
+              </li>
             </ul>
           </div>
           <div className="md:pr-20 pt-10 md:pt-0">
