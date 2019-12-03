@@ -106,7 +106,7 @@ const About = ({ location }) => {
         <form
           className="w-full md:flex md:items-center md:justify-center mt-4"
           name="about-page-mentorship-optin"
-          method="POST"
+          method="post"
           data-netlify="true"
           netlify-honeypot="bot-field-about"
         >

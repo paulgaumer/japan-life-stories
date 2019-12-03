@@ -71,7 +71,7 @@ const Footer = () => {
             </h4>
             <form
               name="contact-footer"
-              method="POST"
+              method="post"
               className=""
               data-netlify="true"
               netlify-honeypot="bot-field"

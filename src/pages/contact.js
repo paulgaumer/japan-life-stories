@@ -14,7 +14,7 @@ const Contact = ({ location }) => {
         <div className="max-w-2xl flex flex-col mx-auto px-10">
           <form
             name="contact-page"
-            method="POST"
+            method="post"
             className=""
             data-netlify="true"
             netlify-honeypot="bot-field-contact"
