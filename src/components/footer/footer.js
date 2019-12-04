@@ -76,6 +76,7 @@ const Footer = () => {
               data-netlify="true"
               netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="form-name" value="contact-footer" />
               <p className="hidden">
                 <label>
                   Don’t fill this out if you're human:{" "}
@@ -91,6 +92,7 @@ const Footer = () => {
                 placeholder="alex@gmail.com"
                 aria-label="Subscribe to our newsletter"
                 className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-sm py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
+                name="email"
               />
               <button
                 className="flex-shrink-0 bg-orange-500 hover:bg-orange-400 border-orange-500 hover:border-orange-400 text-sm border-4 text-white py-1 px-2 rounded-sm"

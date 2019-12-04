@@ -110,6 +110,11 @@ const About = ({ location }) => {
           data-netlify="true"
           netlify-honeypot="bot-field-about"
         >
+          <input
+            type="hidden"
+            name="form-name"
+            value="about-page-mentorship-optin"
+          />
           <p className="hidden">
             <label>
               Don’t fill this out if you're human:{" "}
@@ -122,8 +127,9 @@ const About = ({ location }) => {
           <input
             type="email"
             id="newsletter-email-input"
+            name="email"
             placeholder="alex@gmail.com"
-            className="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
+            className="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4 w-full md:w-auto"
           />
           <button
             className="flex-shrink-0 bg-red-500 hover:bg-red-400 border-red-500 hover:border-red-400 text-sm border-4 text-white py-1 px-2 rounded mt-4 md:mt-0 w-full md:w-auto"
