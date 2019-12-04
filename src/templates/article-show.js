@@ -46,6 +46,7 @@ export const query = graphql`
       publishedAt(formatString: "LL")
       summary
       _rawBody
+      _rawShowNotes
       podcastEpisodeId
       mainImage {
         asset {

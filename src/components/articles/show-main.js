@@ -1,5 +1,6 @@
 import React from "react"
 import PortableText from "@sanity/block-content-to-react"
+import ShowNotes from "./shownotes"
 
 const serializers = {
   types: {
@@ -54,12 +55,17 @@ const serializers = {
 const ShowMain = ({ article }) => {
   return (
     <>
+      {article._rawShowNotes && (
+        <div className="mt-16">
+          <ShowNotes shownotes={article._rawShowNotes} />
+        </div>
+      )}
       <div className="mt-16">
-        <h4 className="font-titles italic text-gray-700">
-          (This is a transcript of the episode. Shownotes are at the end.)
+        <h4 className="text-xl font-titles font-medium text-gray-800">
+          TRANSCRIPT
         </h4>
       </div>
-      <div className="mt-10">
+      <div className="mt-8">
         <PortableText blocks={article._rawBody} serializers={serializers} />
       </div>
     </>

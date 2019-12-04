@@ -30,11 +30,17 @@ module.exports = {
       sans: "Open Sans",
       titles: ["Maven Pro", "sans-serif"],
     },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+      circle: "circle",
+    },
   },
   variants: {
     borderWidth: ["first", "last"],
   },
-  plugins: [
-    require('@tailwindcss/custom-forms'),
-  ],
+  plugins: [require("@tailwindcss/custom-forms")],
 }
