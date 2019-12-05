@@ -32,7 +32,16 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Ebook
+                  Free Ebook
+                </a>
+              </li>
+              <li className="hover:text-orange-400">
+                <a
+                  href="https://japanlifestories.ck.page/mentorship"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Mentorship
                 </a>
               </li>
             </ul>

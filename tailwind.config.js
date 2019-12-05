@@ -6,6 +6,9 @@ module.exports = {
         "8xl": "87rem",
         "9xl": "100rem",
       },
+      maxHeight: {
+        "30": "490px",
+      },
     },
     inset: {
       "-1": "-0.25rem",
