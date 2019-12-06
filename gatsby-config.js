@@ -6,6 +6,7 @@ module.exports = {
     description: `Insights and success stories from foreigners who built a life & career in Japan.`,
     author: `Paul Gaumer`,
     image: "/images/podcast-banner.png",
+    siteUrl: `https://japanlifestories.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -58,6 +59,7 @@ module.exports = {
         tailwind: true,
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
