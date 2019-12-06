@@ -98,7 +98,7 @@ const Footer = () => {
               <input
                 type="email"
                 id="newsletter-email-input"
-                placeholder="alex@gmail.com"
+                placeholder="email@example.com"
                 aria-label="Subscribe to our newsletter"
                 className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-sm py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-400 mr-4"
                 name="email"

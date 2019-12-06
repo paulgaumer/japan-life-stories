@@ -32,7 +32,7 @@ const Contact = ({ location }) => {
                 <span className="text-gray-700">Name</span>
                 <input
                   className="form-input mt-1 block w-full"
-                  placeholder="Alex Brown"
+                  placeholder="First Last"
                   name="name"
                   required
                 />
@@ -41,7 +41,7 @@ const Contact = ({ location }) => {
                 <span className="text-gray-700">Email</span>
                 <input
                   className="form-input mt-1 block w-full"
-                  placeholder="alex@gmail.com"
+                  placeholder="email@example.com"
                   name="email"
                   required
                 />
