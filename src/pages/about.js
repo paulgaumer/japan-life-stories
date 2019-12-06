@@ -103,12 +103,12 @@ const About = ({ location }) => {
               </span>
             </h4>
             <p className="mt-5">
-              Paul spent the past 10 years living, working and building a life
-              in Japan.
+              Born in France, Paul spent the past 10 years living, working and
+              building a life in Japan.
             </p>
             <p className="mt-5">
-              Originally born in France, Paul experienced in a decade a wide
-              range of situations an expatriate could face:
+              He experienced in a decade a wide range of situations an
+              expatriate could face:
             </p>
             <ul className="mt-5 list-disc list-inside">
               <li>Studied in a Japanese University</li>

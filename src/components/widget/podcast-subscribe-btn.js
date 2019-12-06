@@ -8,14 +8,14 @@ const PodcastSubscribeList = () => {
   return (
     <div className="md:flex">
       <a
-        href="https://japanlifestories.com"
+        href="https://podcasts.apple.com/podcast/japan-life-stories/id1490080061"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img src={apple} alt="Apple Podcast" className="m-2" />
       </a>
       <a
-        href="https://japanlifestories.com"
+        href="https://overcast.fm/itunes1490080061/japan-life-stories"
         target="_blank"
         rel="noopener noreferrer"
       >
