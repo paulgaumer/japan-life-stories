@@ -58,7 +58,7 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faTwitterSquare}
                   className="mr-2"
-                  width="1.125rem"
+                  width=".75rem"
                 />
                 Twitter
               </a>
@@ -69,7 +69,7 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faFacebookSquare}
                   className="mr-2"
-                  width="1.125rem"
+                  width=".75rem"
                 />
                 Facebook
               </a>
@@ -80,7 +80,7 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="mr-2"
-                  width="1.125rem"
+                  width=".75rem"
                 />
                 Instagram
               </a>
