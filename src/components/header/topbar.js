@@ -51,21 +51,21 @@ const TopBar = () => {
             className="text-lg pr-3 hover:text-red-200"
             aria-label="Link to Twitter"
           >
-            <FontAwesomeIcon icon={faTwitterSquare} />
+            <FontAwesomeIcon icon={faTwitterSquare} width="1.125rem" />
           </a>
           <a
             href="https://www.facebook.com/JapanLifeStories"
             className="text-lg pr-3 hover:text-red-200"
             aria-label="Link to Facebook"
           >
-            <FontAwesomeIcon icon={faFacebookSquare} />
+            <FontAwesomeIcon icon={faFacebookSquare} width="1.125rem" />
           </a>
           <a
             href="https://www.instagram.com/japan_life_stories/"
             className="text-lg hover:text-red-200"
             aria-label="Link to Instagram"
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} width="1.125rem" />
           </a>
           {/* <p className="hover:text-orange-400">Search</p> */}
         </div>
