@@ -54,6 +54,8 @@ const Footer = () => {
               <a
                 href="https://twitter.com/JPLifeStories"
                 className="md:pr-3 hover:text-orange-400 font-light"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   icon={faTwitterSquare}
@@ -65,6 +67,8 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/JapanLifeStories"
                 className="md:pr-3 hover:text-orange-400 font-light"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   icon={faFacebookSquare}
@@ -76,6 +80,8 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/japan_life_stories/"
                 className="md:pr-3 hover:text-orange-400 font-light"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
@@ -148,9 +154,13 @@ const Footer = () => {
               <Link to="/legal/privacy" className="pr-4">
                 Privacy Policy
               </Link>
-              <Link to="/sitemap.xml" className="">
+              <a
+                href="https://japanlifestories.com/sitemap.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Site Map
-              </Link>
+              </a>
             </span>
           </div>
         </div>

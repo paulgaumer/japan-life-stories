@@ -11,6 +11,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta
+          name="google-site-verification"
+          content="crxs5XLWNKJQsPoDPhqVpmUr7qeIeS31p-3VSsR535k"
+        />
         {/* <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://api.openweathermap.org" /> */}
         {props.headComponents}
