@@ -32,7 +32,7 @@ const TopBar = () => {
 
   return (
     <header className="bg-red-500">
-      <div className="md:max-w-7xl mx-auto my-0 text-xs text-white flex items-center justify-center md:justify-between">
+      <div className="md:max-w-7xl mx-auto my-0 px-2 text-xs text-white flex items-center justify-center md:justify-between">
         <div className="hidden md:block font-medium">
           <Link to="/" className="flex items-center">
             <img
