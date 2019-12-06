@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container mx-auto md:max-w-7xl">
         <div
           id="main-footer"
-          className="pt-10 text-gray-400 md:flex justify-center text-center"
+          className="pt-10 text-gray-400 md:flex justify-center text-center md:text-left"
         >
           <div className="md:pr-20">
             <h4 className="uppercase pb-3 md:pb-5 text-gray-100">Services</h4>
