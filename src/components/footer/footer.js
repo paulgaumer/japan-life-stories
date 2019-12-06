@@ -145,10 +145,12 @@ const Footer = () => {
               <Link to="/legal/terms" className="pr-4">
                 Terms of Service
               </Link>
-              <Link to="/legal/privacy" className="">
+              <Link to="/legal/privacy" className="pr-4">
                 Privacy Policy
               </Link>
-              {/* <a href="https://google.com">Site Map</a> */}
+              <Link to="/sitemap.xml" className="">
+                Site Map
+              </Link>
             </span>
           </div>
         </div>
