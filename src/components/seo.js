@@ -79,10 +79,10 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: `https://japanlifestories.com/images/banner-seo.png`,
         },
         {
-          name: `fb:app_id`,
+          property: `fb:app_id`,
           content: `572380503495655`,
         },
       ].concat(meta)}
