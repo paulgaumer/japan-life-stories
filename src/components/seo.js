@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, title, image }) {
             description
             author
             image
+            siteUrl
           }
         }
       }
@@ -57,6 +58,10 @@ function SEO({ description, lang, meta, title, image }) {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -75,6 +80,10 @@ function SEO({ description, lang, meta, title, image }) {
         {
           name: `twitter:image`,
           content: site.siteMetadata.image,
+        },
+        {
+          name: `fb:app_id`,
+          content: `572380503495655`,
         },
       ].concat(meta)}
     />
