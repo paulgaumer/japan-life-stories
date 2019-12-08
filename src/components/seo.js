@@ -51,7 +51,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: `https://japanlifestories.com/images/banner-seo.png`,
         },
         {
           property: `og:type`,
