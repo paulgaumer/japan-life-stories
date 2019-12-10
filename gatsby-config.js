@@ -5,7 +5,7 @@ module.exports = {
     title: `Japan Life Stories`,
     description: `Insights and success stories from foreigners who built a life & career in Japan.`,
     author: `Paul Gaumer`,
-    image: "/images/podcast-banner.png",
+    image: "/images/banner-seo.png",
     siteUrl: `https://japanlifestories.com`,
   },
   plugins: [
