@@ -9,6 +9,11 @@ module.exports = {
       maxHeight: {
         "30": "490px",
       },
+      spacing: {
+        "72": "18rem",
+        "84": "21rem",
+        "96": "24rem",
+      },
     },
     inset: {
       "-1": "-0.25rem",
