@@ -21,7 +21,7 @@ const About = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="About us" />
+      <SEO title="About us" url="https://japanlifestories.com/about" />
       <div className="md:pb-8 md:leading-loose px-10">
         <h2 className="text-4xl text-center mt-8 md:mt-16 text-gray-700 font-titles">
           Thank you very much for visiting Japan Life Stories!
