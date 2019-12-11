@@ -15,7 +15,7 @@ const ArticleShow = ({ data, location }) => {
       <SEO
         title={`${article.title} - ${article.interviewee}`}
         description={article.summary}
-        url={`https://japanlifestories.com/stories/${article._rawSlug.current}`}
+        url={`https://japanlifestories.com/stories/${article._rawSlug.current}/`}
       />
       <PodcastPlayer podcastEpisodeId={article.podcastEpisodeId} />
       <ShowHeader article={article} />

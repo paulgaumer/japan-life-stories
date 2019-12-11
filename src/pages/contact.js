@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const Contact = ({ location }) => {
   return (
     <Layout location={location}>
-      <SEO title="Contact" url="https://japanlifestories.com/contact" />
+      <SEO title="Contact" url="https://japanlifestories.com/contact/" />
       <div className="pb-8 leading-loose">
         <h2 className="text-4xl text-center mt-16 text-gray-700 font-titles">
           Get in touch
