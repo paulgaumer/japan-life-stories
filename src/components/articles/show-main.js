@@ -8,7 +8,9 @@ const serializers = {
       switch (props.node.style) {
         case "h2":
           return (
-            <h2 className="text-3xl my-10 font-titles">{props.children}</h2>
+            <h2 className="text-3xl mt-20 mb-10 font-titles">
+              {props.children}
+            </h2>
           )
         case "h3":
           return (
