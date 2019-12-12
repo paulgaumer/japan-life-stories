@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, image }) {
+function SEO({ description, lang, meta, title, image, url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -27,14 +27,17 @@ function SEO({ description, lang, meta, title, image }) {
     `
   )
 
+  const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
+  const metaUrl = url || site.siteMetadata.siteUrl
+  console.log(metaUrl)
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={metaTitle}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -43,7 +46,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -51,7 +54,15 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: `https://japanlifestories.com/images/banner-seo.png`,
+          content: `https://japanlifestories.com/images/banner-seotags.png`,
+        },
+        {
+          property: `og:image:width`,
+          content: `2400`,
+        },
+        {
+          property: `og:image:height`,
+          content: `1260`,
         },
         {
           property: `og:type`,
@@ -59,11 +70,11 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:url`,
-          content: site.siteMetadata.siteUrl,
+          content: metaUrl,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -71,7 +82,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
@@ -79,7 +90,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: `https://japanlifestories.com/images/banner-seo.png`,
+          content: `https://japanlifestories.com/images/banner-seotags.png`,
         },
         {
           property: `fb:app_id`,
