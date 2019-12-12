@@ -48,6 +48,8 @@ const TopBar = () => {
         <div className="flex items-center">
           <a
             href="https://twitter.com/JPLifeStories"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-lg pr-3 hover:text-red-200"
             aria-label="Link to Twitter"
           >
@@ -55,6 +57,8 @@ const TopBar = () => {
           </a>
           <a
             href="https://www.facebook.com/JapanLifeStories"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-lg pr-3 hover:text-red-200"
             aria-label="Link to Facebook"
           >
@@ -62,6 +66,8 @@ const TopBar = () => {
           </a>
           <a
             href="https://www.instagram.com/japan_life_stories/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-lg hover:text-red-200"
             aria-label="Link to Instagram"
           >
