@@ -43,7 +43,7 @@ const MainMenu = () => {
   }
 
   return (
-    <nav className="md:sticky-nav md:max-w-7xl mx-auto px-8 flex justify-center md:justify-between items-center pt-6 pb-2 bg-white border border-solid border-gray-300 border-t-0 border-r-0 border-b-2 border-l-0 uppercase text-sm md:text-lg text-gray-800 font-medium md:font-normal font-titles">
+    <nav className="md:sticky-nav md:max-w-7xl mx-auto px-4 md:px-8 flex justify-center md:justify-between items-center pt-6 pb-2 bg-white border border-solid border-gray-300 border-t-0 border-r-0 border-b-2 border-l-0 uppercase text-sm md:text-lg text-gray-800 font-medium md:font-normal font-titles">
       <Link
         to="/"
         aria-label="Link to the Homepage"

@@ -16,8 +16,8 @@ const IndexPage = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Home | Stories" />
-      <div className="justify-center pt-2 hidden md:flex">
+      <SEO title="Podcast Homepage" />
+      <div className="justify-center pt-2 hidden md:flex md:pl-4">
         <PodcastSubscribeList />
       </div>
       <FeaturedSection article={latestArticle} />
