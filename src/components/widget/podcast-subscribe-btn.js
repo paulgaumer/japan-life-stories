@@ -6,7 +6,7 @@ import rss from "../../images/podcast_buttons/new_rss.svg"
 
 const PodcastSubscribeList = () => {
   return (
-    <div className="md:flex">
+    <div className="md:flex md:pl-4">
       <a
         href="https://podcasts.apple.com/podcast/japan-life-stories/id1490080061"
         target="_blank"

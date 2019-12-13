@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import cloud from "../../images/cloud-computing.svg"
 // import Icon from "../../images/sun-mic.png"
 
 const MenuIcon = styled.div`
@@ -42,7 +43,7 @@ const MainMenu = () => {
   }
 
   return (
-    <nav className="md:sticky-nav md:max-w-7xl mx-auto px-8 flex justify-around md:justify-between items-center pt-6 pb-4 bg-white border border-solid border-gray-300 border-t-0 border-r-0 border-b-2 border-l-0 uppercase text-sm md:text-lg text-gray-800 font-medium md:font-normal font-titles">
+    <nav className="md:sticky-nav md:max-w-7xl mx-auto px-8 flex justify-center md:justify-between items-center pt-6 pb-2 bg-white border border-solid border-gray-300 border-t-0 border-r-0 border-b-2 border-l-0 uppercase text-sm md:text-lg text-gray-800 font-medium md:font-normal font-titles">
       <Link
         to="/"
         aria-label="Link to the Homepage"
@@ -56,23 +57,40 @@ const MainMenu = () => {
           />
         </MenuIcon>
       </Link>
-      <div>
-        <Link to="/" className="px-4 md:px-8 hover:font-medium">
+      <div className="flex justify-center">
+        <Link
+          to="/"
+          className="mx-4 md:mr-8 hover:font-medium border-b-2 border-white hover:border-red-400"
+        >
           Stories
         </Link>
-        <Link to="/about" className="px-4 md:px-8 hover:font-medium">
+        <Link
+          to="/about"
+          className="mx-4 md:mx-8 hover:font-medium border-b-2 border-white hover:border-red-400"
+        >
           About
         </Link>
-        <Link to="/contact" className="px-4 md:px-8 hover:font-medium">
+        <Link
+          to="/contact"
+          className="mx-4 md:mx-8 hover:font-medium hidden md:inline-block border-b-2 border-white hover:border-red-400"
+        >
           Contact
         </Link>
         <a
           href="https://japanlifestories.ck.page/ebook"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 md:px-8 hover:font-medium"
+          className="mx-4 md:mx-8 hover:font-medium"
         >
-          Ebook
+          <div className="flex items-start border-b-2 border-white hover:border-red-400">
+            <span className="hidden md:inline-block">Free Travel Guide</span>
+            <span className="md:hidden">Free Guide</span>
+            <img
+              src={cloud}
+              alt="download ebook"
+              className="w-4 md:w-6 ml-1 md:ml-2"
+            />
+          </div>
         </a>
       </div>
       {/* Empty div to allow space-between */}
