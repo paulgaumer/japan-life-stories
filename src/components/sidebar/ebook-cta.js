@@ -17,13 +17,13 @@ const EbookCta = () => {
 
   return (
     <div className="shadow text-center py-8">
-      <h2 className="text-2xl text-gray-800 font-titles font-medium">
-        Free Ebook Guide
+      <h2 className="text-2xl text-red-600 font-titles font-medium">
+        Travel to Japan for $0?
       </h2>
 
       <div className="pt-4">
-        <h3 className="text-red-600 text-lg font-titles">
-          Travel to Japan for $0?
+        <h3 className="text-gray-800 text-lg font-titles">
+          We launched a guide!
         </h3>
 
         <p className="text-sm text-gray-800 pt-4 px-12">
@@ -40,7 +40,7 @@ const EbookCta = () => {
       <form action="https://japanlifestories.ck.page/ebook" target="_blank">
         <input
           type="submit"
-          value="Get a copy"
+          value="Get a free copy"
           className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-sm"
         />
       </form>
