@@ -15,10 +15,11 @@ export default function HTML(props) {
           name="google-site-verification"
           content="crxs5XLWNKJQsPoDPhqVpmUr7qeIeS31p-3VSsR535k"
         />
+        {/* converkit modals */}
         <script
           async
-          data-uid="984a1f6ff0"
-          src="https://japanlifestories.ck.page/984a1f6ff0/index.js"
+          data-uid="fd0c7c99cb"
+          src="https://japanlifestories.ck.page/fd0c7c99cb/index.js"
         ></script>
         {/* <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://api.openweathermap.org" /> */}
