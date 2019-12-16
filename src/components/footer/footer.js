@@ -78,7 +78,7 @@ const Footer = () => {
                 Facebook
               </a>
               <a
-                href="https://www.instagram.com/japan_life_stories/"
+                href="https://www.instagram.com/japan_life_stories_podcast/"
                 className="md:pr-3 hover:text-orange-400 font-light"
                 target="_blank"
                 rel="noopener noreferrer"

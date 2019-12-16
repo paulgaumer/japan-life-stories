@@ -65,7 +65,7 @@ const TopBar = () => {
             <FontAwesomeIcon icon={faFacebookSquare} width=".75rem" />
           </a>
           <a
-            href="https://www.instagram.com/japan_life_stories/"
+            href="https://www.instagram.com/japan_life_stories_podcast/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg hover:text-red-200"
