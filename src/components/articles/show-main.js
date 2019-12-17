@@ -4,6 +4,9 @@ import ShowNotes from "./shownotes"
 import getYoutubeId from "get-youtube-id"
 import urlBuilder from "@sanity/image-url"
 
+const urlFor = source =>
+  urlBuilder({ projectId: "q3a1b0pv", dataset: "production" }).image(source)
+
 const serializers = {
   types: {
     block(props) {
@@ -57,7 +60,17 @@ const serializers = {
     },
     image(props) {
       console.log(props.node.asset._ref)
-      return <img src={props.node.asset._ref} alt="blog image" />
+      return (
+        <figure className="flex justify-center">
+          <img
+            src={urlFor(props.node.asset)
+              .width(300)
+              .url()}
+            alt="blog"
+            className="rounded"
+          />
+        </figure>
+      )
     },
   },
   marks: {
