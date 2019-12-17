@@ -63,9 +63,11 @@ const ShowMain = ({ article }) => {
         </div>
       )}
       <div className="mt-16">
-        <h4 className="text-xl font-titles font-medium text-gray-800">
-          TRANSCRIPT
-        </h4>
+        {article.podcastEpisodeId && (
+          <h4 className="text-xl font-titles font-medium text-gray-800">
+            TRANSCRIPT
+          </h4>
+        )}
       </div>
       <div className="mt-8">
         <PortableText blocks={article._rawBody} serializers={serializers} />
