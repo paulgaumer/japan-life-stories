@@ -11,8 +11,17 @@ import PodcastSubscribeList from "../components/widget/podcast-subscribe-btn"
 
 const IndexPage = ({ data, location }) => {
   const allArticles = data.allSanityPost.edges
-  const latestArticle = allArticles[0]
-  const archives = allArticles.slice(1)
+  const allPodcasts = allArticles.filter(article => {
+    return article.node.categories[0].title === "podcast"
+  })
+  const latestPodcast = allPodcasts[0]
+  const latestPodcastId = allPodcasts[0].node.id
+  console.log(latestPodcastId)
+
+  // const archives = allArticles.slice(1)
+  const archives = allArticles.filter(article => {
+    return article.node.id !== latestPodcastId
+  })
 
   return (
     <Layout location={location}>
@@ -20,7 +29,7 @@ const IndexPage = ({ data, location }) => {
       <div className="justify-center pt-2 hidden md:flex md:pl-4">
         <PodcastSubscribeList />
       </div>
-      <FeaturedSection article={latestArticle} />
+      <FeaturedSection article={latestPodcast} />
       <div id="home-body" className="pt-24 px-8 md:flex">
         <div id="articles" className="md:w-3/4 md:pr-16">
           <ArticlesList articles={archives} />
@@ -41,6 +50,9 @@ export const articlesQuery = graphql`
       edges {
         node {
           title
+          author {
+            name
+          }
           _createdAt
           id
           slug {
@@ -50,6 +62,9 @@ export const articlesQuery = graphql`
           summary
           _rawBody
           podcastEpisodeId
+          categories {
+            title
+          }
           mainImage {
             asset {
               fluid(maxWidth: 300) {
