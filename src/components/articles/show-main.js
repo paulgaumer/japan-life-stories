@@ -1,6 +1,7 @@
 import React from "react"
 import PortableText from "@sanity/block-content-to-react"
 import ShowNotes from "./shownotes"
+import getYoutubeId from "get-youtube-id"
 
 const serializers = {
   types: {
@@ -35,6 +36,23 @@ const serializers = {
         default:
           return <p className="mb-6 leading-relaxed">{props.children}</p>
       }
+    },
+    youtube(props) {
+      const id = getYoutubeId(props.node.url)
+      const url = `https://www.youtube.com/embed/${id}`
+      return (
+        <div className="flex justify-center">
+          <iframe
+            title="Youtube Preview"
+            width="560"
+            height="315"
+            src={url}
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      )
     },
   },
   marks: {
