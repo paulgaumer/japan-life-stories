@@ -2,6 +2,7 @@ import React from "react"
 import PortableText from "@sanity/block-content-to-react"
 import ShowNotes from "./shownotes"
 import getYoutubeId from "get-youtube-id"
+import urlBuilder from "@sanity/image-url"
 
 const serializers = {
   types: {
@@ -53,6 +54,10 @@ const serializers = {
           ></iframe>
         </div>
       )
+    },
+    image(props) {
+      console.log(props.node.asset._ref)
+      return <img src={props.node.asset._ref} alt="blog image" />
     },
   },
   marks: {
