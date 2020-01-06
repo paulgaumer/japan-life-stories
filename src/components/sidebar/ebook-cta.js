@@ -18,7 +18,7 @@ const EbookCta = () => {
   return (
     <div className="shadow text-center py-8">
       <h2 className="text-2xl text-red-600 font-titles font-medium">
-        Travel to Japan for $0?
+        Japan for $0?
       </h2>
 
       <div className="pt-4">
@@ -27,8 +27,8 @@ const EbookCta = () => {
         </h3>
 
         <p className="text-sm text-gray-800 pt-4 px-12">
-          Enjoy 20 pages of insider tips to explore Japan smarter, or even
-          travel for free
+          Prepare your move and save big money with 20 pages of insider tips to
+          travel smarter
         </p>
       </div>
 

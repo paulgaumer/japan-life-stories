@@ -13,10 +13,19 @@ const ArticleCard = ({ article }) => {
                 <h3 className="text-2xl md:text-2xl text-gray-900 font-titles">
                   {article.title}
                 </h3>
-                <p className="text-xl text-gray-700 font-titles pt-2">
-                  <span className="text-orange-500">- </span>with{" "}
-                  {article.interviewee}
-                </p>
+
+                {article.categories[0].title === "podcast" && (
+                  <p className="text-xl text-gray-700 font-titles pt-2">
+                    <span className="text-orange-500">- </span>with{" "}
+                    {article.interviewee}
+                  </p>
+                )}
+                {article.categories[0].title !== "podcast" && (
+                  <p className=" text-gray-700 font-titles pt-2">
+                    <span className="text-orange-500">- </span> Blog
+                    <span className="text-orange-500"> -</span>
+                  </p>
+                )}
               </div>
               {/* Image displays on Mobile only */}
               <div className="md:hidden flex-shrink-0">

@@ -17,7 +17,9 @@ const ArticleShow = ({ data, location }) => {
         description={article.summary}
         url={`https://japanlifestories.com/stories/${article._rawSlug.current}/`}
       />
-      <PodcastPlayer podcastEpisodeId={article.podcastEpisodeId} />
+      {article.podcastEpisodeId && (
+        <PodcastPlayer podcastEpisodeId={article.podcastEpisodeId} />
+      )}
       <ShowHeader article={article} />
       <div id="article-show-body" className="pt-16 px-8 md:flex">
         <div className="md:w-3/4 md:pr-16">
@@ -37,6 +39,9 @@ export const query = graphql`
   query($articleId: String!) {
     sanityPost(id: { eq: $articleId }) {
       title
+      author {
+        name
+      }
       interviewee
       socials {
         website
@@ -50,6 +55,9 @@ export const query = graphql`
       _rawBody
       _rawShowNotes
       podcastEpisodeId
+      categories {
+        title
+      }
       mainImage {
         asset {
           fluid(maxWidth: 300) {

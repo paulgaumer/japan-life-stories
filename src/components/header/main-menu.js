@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
-import cloud from "../../images/cloud-computing.svg"
-// import Icon from "../../images/sun-mic.png"
 
 const MenuIcon = styled.div`
   .showing {
@@ -77,19 +75,18 @@ const MainMenu = () => {
           Contact
         </Link>
         <a
-          href="https://japanlifestories.ck.page/ebook"
+          href="https://japanlifestories.ck.page/mentorship"
           target="_blank"
           rel="noopener noreferrer"
           className="mx-4 md:mx-8 hover:font-medium"
         >
           <div className="flex items-start border-b-2 border-white hover:border-red-400">
-            <span className="hidden md:inline-block">Free Travel Guide</span>
-            <span className="md:hidden">Free Guide</span>
-            <img
-              src={cloud}
-              alt="download ebook"
-              className="w-4 md:w-6 ml-1 md:ml-2"
-            />
+            <span className="">
+              Mentorship{" "}
+              <span role="img" aria-label="strong arm emoji">
+                💪
+              </span>
+            </span>
           </div>
         </a>
       </div>

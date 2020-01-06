@@ -1,6 +1,11 @@
 import React from "react"
 import PortableText from "@sanity/block-content-to-react"
 import ShowNotes from "./shownotes"
+import getYoutubeId from "get-youtube-id"
+import urlBuilder from "@sanity/image-url"
+
+const urlFor = source =>
+  urlBuilder({ projectId: "q3a1b0pv", dataset: "production" }).image(source)
 
 const serializers = {
   types: {
@@ -36,6 +41,37 @@ const serializers = {
           return <p className="mb-6 leading-relaxed">{props.children}</p>
       }
     },
+    youtube(props) {
+      const id = getYoutubeId(props.node.url)
+      const url = `https://www.youtube.com/embed/${id}`
+      return (
+        <div className="flex justify-center">
+          <iframe
+            title="Youtube Preview"
+            width="560"
+            height="315"
+            src={url}
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      )
+    },
+    image(props) {
+      console.log(props.node.asset._ref)
+      return (
+        <figure className="flex justify-center">
+          <img
+            src={urlFor(props.node.asset)
+              .width(300)
+              .url()}
+            alt="blog"
+            className="rounded"
+          />
+        </figure>
+      )
+    },
   },
   marks: {
     link: ({ children, mark }) =>
@@ -63,9 +99,11 @@ const ShowMain = ({ article }) => {
         </div>
       )}
       <div className="mt-16">
-        <h4 className="text-xl font-titles font-medium text-gray-800">
-          TRANSCRIPT
-        </h4>
+        {article.podcastEpisodeId && (
+          <h4 className="text-xl font-titles font-medium text-gray-800">
+            TRANSCRIPT
+          </h4>
+        )}
       </div>
       <div className="mt-8">
         <PortableText blocks={article._rawBody} serializers={serializers} />
