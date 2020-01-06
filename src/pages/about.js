@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,7 +20,7 @@ const About = ({ location }) => {
   `)
 
   return (
-    <Layout location={location}>
+    <Link location={location}>
       <SEO title="About us" url="https://japanlifestories.com/about/" />
       <div className="md:pb-8 md:leading-loose px-10">
         <h2 className="text-4xl text-center mt-8 md:mt-16 text-gray-700 font-titles">
@@ -150,16 +150,16 @@ const About = ({ location }) => {
           </p>
         </div>
 
-        <a
-          href="https://japanlifestories.ck.page/mentorship"
+        <Link
+          to="/mentorship"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-red-500 hover:bg-red-400 border-red-500 hover:border-red-400 text-sm border-4 text-white py-1 px-2 rounded mt-6 inline-block uppercase"
         >
           Get Started
-        </a>
+        </Link>
       </div>
-    </Layout>
+    </Link>
   )
 }
 

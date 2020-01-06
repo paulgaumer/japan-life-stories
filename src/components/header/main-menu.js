@@ -74,8 +74,8 @@ const MainMenu = () => {
         >
           Contact
         </Link>
-        <a
-          href="https://japanlifestories.ck.page/mentorship"
+        <Link
+          to="/mentorship"
           target="_blank"
           rel="noopener noreferrer"
           className="mx-4 md:mx-8 hover:font-medium"
@@ -88,7 +88,7 @@ const MainMenu = () => {
               </span>
             </span>
           </div>
-        </a>
+        </Link>
       </div>
       {/* Empty div to allow space-between */}
       <div></div>

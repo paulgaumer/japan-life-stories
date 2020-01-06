@@ -37,7 +37,7 @@ const EbookCta = () => {
         alt="japan Life Stories Ebook"
         className=""
       />
-      <form action="https://japanlifestories.ck.page/ebook" target="_blank">
+      <form action="/ebook" target="_blank">
         <input
           type="submit"
           value="Get a free copy"
