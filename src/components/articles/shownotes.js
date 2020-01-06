@@ -34,7 +34,7 @@ const serializers = {
 const Shownotes = props => {
   return (
     <div className="bg-gray-100 p-8 rounded font-titles">
-      <h4 className="text-xl font-medium text-gray-800">SHOWNOTES</h4>
+      <h4 className="text-xl font-medium text-gray-800">SHOW NOTES</h4>
       <ul className="">
         <PortableText blocks={props.shownotes} serializers={serializers} />
       </ul>
