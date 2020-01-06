@@ -27,6 +27,13 @@ module.exports = {
         // token: process.env.MY_SANITY_TOKEN,
       },
     },
+    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "1400766143415157",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,

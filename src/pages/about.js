@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -150,14 +150,14 @@ const About = ({ location }) => {
           </p>
         </div>
 
-        <Link
-          to="/mentorship"
+        <a
+          href="https://japanlifestories.ck.page/mentorship"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-red-500 hover:bg-red-400 border-red-500 hover:border-red-400 text-sm border-4 text-white py-1 px-2 rounded mt-6 inline-block uppercase"
         >
           Get Started
-        </Link>
+        </a>
       </div>
     </Layout>
   )
