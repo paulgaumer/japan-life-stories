@@ -27,18 +27,22 @@ const Footer = () => {
                 <Link to="/">Stories</Link>
               </li>
               <li className="hover:text-orange-400">
-                <Link to="/ebook" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://japanlifestories.ck.page/ebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Free Ebook
-                </Link>
+                </a>
               </li>
               <li className="hover:text-orange-400">
-                <Link
-                  to="/mentorship"
+                <a
+                  href="https://japanlifestories.ck.page/mentorship"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Mentorship
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

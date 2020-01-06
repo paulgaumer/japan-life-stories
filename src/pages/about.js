@@ -20,7 +20,7 @@ const About = ({ location }) => {
   `)
 
   return (
-    <Link location={location}>
+    <Layout location={location}>
       <SEO title="About us" url="https://japanlifestories.com/about/" />
       <div className="md:pb-8 md:leading-loose px-10">
         <h2 className="text-4xl text-center mt-8 md:mt-16 text-gray-700 font-titles">
@@ -159,7 +159,7 @@ const About = ({ location }) => {
           Get Started
         </Link>
       </div>
-    </Link>
+    </Layout>
   )
 }
 
