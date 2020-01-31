@@ -54,7 +54,7 @@ function SEO({ description, lang, meta, title, image, url }) {
         },
         {
           property: `og:image`,
-          content: `https://japanlifestories.com/images/banner-seotags.png`,
+          content: `https://japanlifestories.com/images/banner-seo-v2.png`,
         },
         {
           property: `og:image:width`,
@@ -90,7 +90,7 @@ function SEO({ description, lang, meta, title, image, url }) {
         },
         {
           name: `twitter:image`,
-          content: `https://japanlifestories.com/images/banner-seotags.png`,
+          content: `https://japanlifestories.com/images/banner-seo-v2.png`,
         },
         {
           property: `fb:app_id`,
