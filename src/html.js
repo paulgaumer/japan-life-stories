@@ -18,8 +18,8 @@ export default function HTML(props) {
         {/* converkit modals */}
         <script
           async
-          data-uid="fd0c7c99cb"
-          src="https://japanlifestories.ck.page/fd0c7c99cb/index.js"
+          data-uid="bcfa4fc155"
+          src="https://japanlifestories.ck.page/bcfa4fc155/index.js"
         ></script>
         {/* <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://api.openweathermap.org" /> */}
