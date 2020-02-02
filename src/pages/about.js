@@ -113,7 +113,7 @@ const About = ({ location }) => {
             <ul className="mt-5 list-disc list-inside">
               <li>Studied in a Japanese University</li>
               <li>Employed by both Japanese & International firms</li>
-              <li>Recruited for Forbes 500 companies</li>
+              <li>Recruited for Fortune 500 companies</li>
               <li>Became entrepreneur & created his company in Japan</li>
               <li>
                 Developed a whole new industry (coding bootcamps) and helped
