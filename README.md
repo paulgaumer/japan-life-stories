@@ -2,13 +2,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/paulgaumer/japan_life_stories">
-    <img src="src/images/podcast-logo.png" alt="Logo" width="80" height="80">
+    <img src="src/images/podcast-logo.png" alt="Logo" width="300">
   </a>
 
   <h3 align="center">Japan Life Stories</h3>
 
   <p align="center">
-    A podcast sharing stories from foreigners living in Japan
+    Podcast & publishing platform sharing stories from foreigners living in Japan
     <br />
     <br />
     <a href="https://japanlifestories.com/">View Website</a>
@@ -55,7 +55,7 @@ If you'd like to contribute or just run the website to understand its code:
 1. Clone the repo
 
 ```sh
-git clone https://github.com/paulgaumer/japan_life_stories.git
+git clone git@github.com:paulgaumer/japan_life_stories.git
 ```
 
 2. Install NPM packages
@@ -81,6 +81,6 @@ The following variables are needed:
 
 ## Contact
 
-Paul Gaumer - [@PaulGaumer](https://twitter.com/@PaulGaumer) - hello@paulgaumer.com
+[Paul Gaumer](https://paulgaumer.com) - [@PaulGaumer](https://twitter.com/@PaulGaumer) - hello@paulgaumer.com
 
 Project Link: [https://github.com/paulgaumer/japan_life_stories](https://github.com/paulgaumer/japan_life_stories)
