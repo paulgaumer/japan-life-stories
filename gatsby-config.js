@@ -45,21 +45,21 @@ module.exports = {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: `Maven Pro`,
-            weights: [`400`, `500`, `700`, `900`],
-          },
-          {
-            family: `Open Sans`,
-            weights: [`300`, `400`, `600`, `700`, `800`],
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts-v2`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Maven Pro`,
+    //         weights: [`400`, `500`, `700`, `900`],
+    //       },
+    //       {
+    //         family: `Open Sans`,
+    //         weights: [`300`, `400`, `600`, `700`, `800`],
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
