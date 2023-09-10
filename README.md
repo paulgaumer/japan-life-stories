@@ -11,7 +11,7 @@
     Podcast & publishing platform sharing stories from foreigners living in Japan
     <br />
     <br />
-    <a href="https://japanlifestories.com/">View Website</a>
+    <a href="https://japanlifestories.netlify.app/">View Website</a>
     ·
     <a href="https://www.paulgaumer.com/#contact-form">Report Bug</a>
     ·

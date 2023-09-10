@@ -3,11 +3,11 @@ import React from "react"
 const PodcastPlayer = ({ podcastEpisodeId }) => {
   return (
     <iframe
-      src={`https://www.buzzsprout.com/740042/${podcastEpisodeId}?client_source=small_player&amp;iframe=true&amp;referrer=https%3A%2F%2Fwww.buzzsprout.com%2F726084.js%3Fplayer%3Dsmall`}
+      src={`https://podcasters.spotify.com/pod/show/paul-gaumer/embed/episodes/${podcastEpisodeId}`}
       title={podcastEpisodeId}
+      height="200px"
       width="100%"
-      height="200"
-      frameBorder="0"
+      frameborder="0"
       scrolling="no"
     ></iframe>
   )

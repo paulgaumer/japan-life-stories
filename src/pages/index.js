@@ -26,15 +26,15 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO title="Podcast Homepage" />
-      <div className="justify-center pt-2 hidden md:flex md:pl-4">
+      <div className="justify-center hidden pt-2 md:flex md:pl-4">
         <PodcastSubscribeList />
       </div>
       <FeaturedSection article={latestPodcast} />
-      <div id="home-body" className="pt-24 px-8 md:flex">
+      <div id="home-body" className="px-8 md:pt-24 md:flex">
         <div id="articles" className="md:w-3/4 md:pr-16">
           <ArticlesList articles={archives} />
         </div>
-        <div id="sidebar" className="w-1/4 hidden md:block">
+        <div id="sidebar" className="hidden w-1/4 md:block">
           <Sidebar />
         </div>
       </div>

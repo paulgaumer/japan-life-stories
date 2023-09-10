@@ -21,11 +21,11 @@ const ArticleShow = ({ data, location }) => {
         <PodcastPlayer podcastEpisodeId={article.podcastEpisodeId} />
       )}
       <ShowHeader article={article} />
-      <div id="article-show-body" className="pt-16 px-8 md:flex">
+      <div id="article-show-body" className="px-8 pt-16 md:flex">
         <div className="md:w-3/4 md:pr-16">
           <ShowMain article={article} />
         </div>
-        <div id="sidebar" className="w-1/4 pt-16 hidden md:block">
+        <div id="sidebar" className="hidden w-1/4 pt-16 md:block">
           <Sidebar />
         </div>
       </div>
