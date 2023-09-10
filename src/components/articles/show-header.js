@@ -49,38 +49,38 @@ const ShowHeader = ({ article }) => {
       : image.blogImage.childImageSharp.fluid
 
   return (
-    <ArticleHeader className="relative mt-1">
+    <ArticleHeader className="relative">
       <BackgroundImage
         Tag="div"
         fluid={postType}
         className=""
         style={{ backgroundPosition: "center center" }}
       >
-        {/* <div className="flex flex-col items-center relative pb-20 md:pb-8"> */}
-        <div className="flex flex-col items-center relative pb-20 md:pb-8">
+        {/* <div className="relative flex flex-col items-center pb-20 md:pb-8"> */}
+        <div className="relative flex flex-col items-center pb-20 -mt-24 md:pb-8 md:-mt-10">
           {article.categories[0].title === "podcast" && (
             <Img
               fluid={article.mainImage.asset.fluid}
               alt={`portrait of ${article.interviewee}`}
-              className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full my-8"
+              className="object-cover w-40 h-40 my-8 rounded-full md:w-48 md:h-48"
               imgStyle={{
                 objectPosition: "top",
               }}
             />
           )}
           {article.categories[0].title !== "podcast" && (
-            <div className="w-40 h-24 md:h-40 bg-transparent"></div>
+            <div className="w-40 h-24 bg-transparent md:h-40"></div>
           )}
-          {/* <div className="w-4/5 md:w-2/3 absolute bottom-0 py-6 bg-white rounded text-center -bottom-20"> */}
+          {/* <div className="absolute bottom-0 w-4/5 py-6 text-center bg-white rounded md:w-2/3 -bottom-20"> */}
           <div
-            className="w-4/5 md:w-2/3 absolute bottom-0 py-6 bg-white rounded text-center"
+            className="absolute bottom-0 w-4/5 py-6 text-center bg-white rounded md:w-2/3"
             style={
               article.categories[0].title === "podcast"
                 ? { bottom: "-5rem" }
                 : { bottom: "-3rem" }
             }
           >
-            <h3 className="text-2xl md:text-3xl text-gray-800 font-medium font-titles">
+            <h3 className="text-2xl font-medium text-gray-800 md:text-3xl font-titles">
               {article.title}
             </h3>
             {article.categories[0].title === "podcast" && (
@@ -89,7 +89,7 @@ const ShowHeader = ({ article }) => {
               </p>
             )}
             {article.categories[0].title !== "podcast" && (
-              <p className="text-gray-600 font-titles pt-2">
+              <p className="pt-2 text-gray-600 font-titles">
                 - {article.author.name} -
               </p>
             )}
