@@ -22,14 +22,14 @@ const PodcastSubscribeList = () => {
         <img src={overcast} alt="Overcast" className="m-2" />
       </a>
       <a
-        href="https://open.spotify.com/show/3mFkhjHzhE4IknTGhwUJvj"
+        href="https://open.spotify.com/show/3ZPpFdWMtYEYcKcQXRVKmQ"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img src={spotify} alt="Spotify" className="m-2" />
       </a>
       <a
-        href="https://feeds.buzzsprout.com/740042.rss"
+        href="https://anchor.fm/s/e8ae101c/podcast/rss"
         target="_blank"
         rel="noopener noreferrer"
       >
